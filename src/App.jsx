@@ -32,7 +32,7 @@ function App() {
         <div className="container mx-auto px-6 py-12">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-800 mb-4">
-              Quiz<span className="text-blue-600">Master</span>
+              <span className="text-blue-600">Quiz D'Ishola😎😇</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Testez vos connaissances dans différents domaines avec nos quiz interactifs
