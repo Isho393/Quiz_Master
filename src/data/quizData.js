@@ -1,1298 +1,1812 @@
 export const quizCategories = [
   {
-    id: 'culture',
-    name: 'Culture Générale',
-    icon: '🎭',
-    description: 'Testez vos connaissances générales',
-    color: 'from-purple-500 to-pink-600',
+    id: "culture",
+    name: "Culture Générale",
+    icon: "🎭",
+    description: "Testez vos connaissances générales",
+    color: "from-purple-500 to-pink-600",
     questions: [
       {
         id: 1,
-        question: 'Qui a peint la Joconde ?',
-        options: ['Vincent van Gogh', 'Leonardo da Vinci', 'Pablo Picasso', 'Claude Monet'],
+        question: "Qui a peint la Joconde ?",
+        options: [
+          "Vincent van Gogh",
+          "Leonardo da Vinci",
+          "Pablo Picasso",
+          "Claude Monet",
+        ],
         correctAnswer: 1,
-        explanation: "La Joconde a été peinte par Léonard de Vinci entre 1503 et 1506."
+        explanation:
+          "La Joconde a été peinte par Léonard de Vinci entre 1503 et 1506.",
       },
       {
         id: 2,
-        question: 'Quelle est la capitale de l\'Australie ?',
-        options: ['Sydney', 'Melbourne', 'Canberra', 'Perth'],
+        question: "Quelle est la capitale de l'Australie ?",
+        options: ["Sydney", "Melbourne", "Canberra", "Perth"],
         correctAnswer: 2,
-        explanation: "La capitale de l'Australie est Canberra, qui est située dans le Territoire de la capitale australienne."
+        explanation:
+          "La capitale de l'Australie est Canberra, qui est située dans le Territoire de la capitale australienne.",
       },
       {
         id: 3,
-        question: 'En quelle année l\'homme a-t-il marché sur la lune pour la première fois ?',
-        options: ['1967', '1968', '1969', '1970'],
+        question:
+          "En quelle année l'homme a-t-il marché sur la lune pour la première fois ?",
+        options: ["1967", "1968", "1969", "1970"],
         correctAnswer: 2,
-        explanation: "La première mission humaine sur la Lune a eu lieu le 20 juillet 1969 lors de la mission Apollo 11, avec Neil Armstrong et Buzz Aldrin."
+        explanation:
+          "La première mission humaine sur la Lune a eu lieu le 20 juillet 1969 lors de la mission Apollo 11, avec Neil Armstrong et Buzz Aldrin.",
       },
       {
         id: 4,
         question: 'Qui a écrit "Les Misérables" ?',
-        options: ['Victor Hugo', 'Émile Zola', 'Gustave Flaubert', 'Marcel Proust'],
+        options: [
+          "Victor Hugo",
+          "Émile Zola",
+          "Gustave Flaubert",
+          "Marcel Proust",
+        ],
         correctAnswer: 0,
-        explanation: "Les Misérables est un roman de Victor Hugo publié en 1862."
+        explanation:
+          "Les Misérables est un roman de Victor Hugo publié en 1862.",
       },
       {
         id: 5,
-        question: 'Combien y a-t-il de continents ?',
-        options: ['5', '6', '7', '8'],
+        question: "Combien y a-t-il de continents ?",
+        options: ["5", "6", "7", "8"],
         correctAnswer: 2,
-        explanation: "Il y a 7 continents : l'Afrique, l'Amérique du Nord, l'Amérique du Sud, l'Europe, l'Asie, l'Australie et l'Antarctique."
-      }
-    ]
+        explanation:
+          "Il y a 7 continents : l'Afrique, l'Amérique du Nord, l'Amérique du Sud, l'Europe, l'Asie, l'Australie et l'Antarctique.",
+      },
+    ],
   },
   {
-    id: 'science',
-    name: 'Sciences',
-    icon: '🔬',
-    description: 'Explorez le monde scientifique',
-    color: 'from-blue-500 to-cyan-600',
+    id: "science",
+    name: "Sciences",
+    icon: "🔬",
+    description: "Explorez le monde scientifique",
+    color: "from-blue-500 to-cyan-600",
     questions: [
       {
         id: 1,
-        question: 'Quel est le symbole chimique de l\'or ?',
-        options: ['Go', 'Au', 'Ag', 'Or'],
+        question: "Quel est le symbole chimique de l'or ?",
+        options: ["Go", "Au", "Ag", "Or"],
         correctAnswer: 1,
-        explanation: "L'or est un élément chimique de symbole Au."
+        explanation: "L'or est un élément chimique de symbole Au.",
       },
       {
         id: 2,
-        question: 'Quelle planète est la plus proche du Soleil ?',
-        options: ['Vénus', 'Mars', 'Mercure', 'Terre'],
+        question: "Quelle planète est la plus proche du Soleil ?",
+        options: ["Vénus", "Mars", "Mercure", "Terre"],
         correctAnswer: 2,
-        explanation: "Mercure est la planète la plus proche du Soleil, à environ 57,9 millions de kilomètres."
+        explanation:
+          "Mercure est la planète la plus proche du Soleil, à environ 57,9 millions de kilomètres.",
       },
       {
         id: 3,
-        question: 'Combien d\'os compte le corps humain adulte ?',
-        options: ['196', '206', '216', '226'],
+        question: "Combien d'os compte le corps humain adulte ?",
+        options: ["196", "206", "216", "226"],
         correctAnswer: 1,
-        explanation: "Le corps humain adulte compte 206 os, répartis en 27 squelettes."
+        explanation:
+          "Le corps humain adulte compte 206 os, répartis en 27 squelettes.",
       },
       {
         id: 4,
-        question: 'Quelle est la vitesse de la lumière dans le vide ?',
-        options: ['300 000 km/s', '299 792 458 m/s', '150 000 km/s', '400 000 km/s'],
+        question: "Quelle est la vitesse de la lumière dans le vide ?",
+        options: [
+          "300 000 km/s",
+          "299 792 458 m/s",
+          "150 000 km/s",
+          "400 000 km/s",
+        ],
         correctAnswer: 1,
-        explanation: "La vitesse de la lumière dans le vide est d'environ 299 792 458 mètres par seconde."
+        explanation:
+          "La vitesse de la lumière dans le vide est d'environ 299 792 458 mètres par seconde.",
       },
       {
         id: 5,
-        question: 'Quel gaz représente environ 78% de l\'atmosphère terrestre ?',
-        options: ['Oxygène', 'Dioxyde de carbone', 'Azote', 'Argon'],
+        question: "Quel gaz représente environ 78% de l'atmosphère terrestre ?",
+        options: ["Oxygène", "Dioxyde de carbone", "Azote", "Argon"],
         correctAnswer: 2,
-        explanation: "L'azote représente environ 78% de l'atmosphère terrestre, ce qui en fait le gaz le plus abondant."
-      }
-    ]
+        explanation:
+          "L'azote représente environ 78% de l'atmosphère terrestre, ce qui en fait le gaz le plus abondant.",
+      },
+    ],
   },
   {
-    id: 'histoire',
-    name: 'Histoire',
-    icon: '📚',
-    description: 'Voyagez à travers les époques',
-    color: 'from-amber-500 to-orange-600',
+    id: "histoire",
+    name: "Histoire",
+    icon: "📚",
+    description: "Voyagez à travers les époques",
+    color: "from-amber-500 to-orange-600",
     questions: [
       {
         id: 1,
-        question: 'En quelle année a eu lieu la Révolution française ?',
-        options: ['1789', '1792', '1799', '1804'],
+        question: "En quelle année a eu lieu la Révolution française ?",
+        options: ["1789", "1792", "1799", "1804"],
         correctAnswer: 0,
-        explanation: "La Révolution française a débuté en 1789 avec la prise de la Bastille et s'est terminée en 1799 avec la chute de Robespierre."
+        explanation:
+          "La Révolution française a débuté en 1789 avec la prise de la Bastille et s'est terminée en 1799 avec la chute de Robespierre.",
       },
       {
         id: 2,
-        question: 'Qui était le premier empereur romain ?',
-        options: ['Jules César', 'Auguste', 'Néron', 'Trajan'],
+        question: "Qui était le premier empereur romain ?",
+        options: ["Jules César", "Auguste", "Néron", "Trajan"],
         correctAnswer: 1,
-        explanation: "Auguste est le premier empereur romain, qui a régné de 27 av. J.-C. à 14 ap. J.-C."
+        explanation:
+          "Auguste est le premier empereur romain, qui a régné de 27 av. J.-C. à 14 ap. J.-C.",
       },
       {
         id: 3,
-        question: 'Quelle guerre a duré de 1939 à 1945 ?',
-        options: ['Première Guerre mondiale', 'Guerre de Corée', 'Seconde Guerre mondiale', 'Guerre du Vietnam'],
+        question: "Quelle guerre a duré de 1939 à 1945 ?",
+        options: [
+          "Première Guerre mondiale",
+          "Guerre de Corée",
+          "Seconde Guerre mondiale",
+          "Guerre du Vietnam",
+        ],
         correctAnswer: 2,
-        explanation: "La Seconde Guerre mondiale a duré de 1939 à 1945, avec la défaite de l'Allemagne nazie."
+        explanation:
+          "La Seconde Guerre mondiale a duré de 1939 à 1945, avec la défaite de l'Allemagne nazie.",
       },
       {
         id: 4,
-        question: 'Quel explorateur a découvert l\'Amérique en 1492 ?',
-        options: ['Marco Polo', 'Vasco de Gama', 'Christophe Colomb', 'Magellan'],
+        question: "Quel explorateur a découvert l'Amérique en 1492 ?",
+        options: [
+          "Marco Polo",
+          "Vasco de Gama",
+          "Christophe Colomb",
+          "Magellan",
+        ],
         correctAnswer: 2,
-        explanation: "Christophe Colomb a découvert l'Amérique le 12 octobre 1492, après avoir navigué en direction de l'Ouest."
+        explanation:
+          "Christophe Colomb a découvert l'Amérique le 12 octobre 1492, après avoir navigué en direction de l'Ouest.",
       },
       {
         id: 5,
-        question: 'En quelle année est tombé le mur de Berlin ?',
-        options: ['1987', '1989', '1991', '1993'],
+        question: "En quelle année est tombé le mur de Berlin ?",
+        options: ["1987", "1989", "1991", "1993"],
         correctAnswer: 1,
-        explanation: "Le mur de Berlin a été démoli le 9 novembre 1989, après 28 ans d'existence."
-      }
-    ]
+        explanation:
+          "Le mur de Berlin a été démoli le 9 novembre 1989, après 28 ans d'existence.",
+      },
+    ],
   },
   {
-    id: 'sport',
-    name: 'Sport',
-    icon: '⚽',
-    description: 'Testez vos connaissances sportives',
-    color: 'from-green-500 to-emerald-600',
+    id: "sport",
+    name: "Sport",
+    icon: "⚽",
+    description: "Testez vos connaissances sportives",
+    color: "from-green-500 to-emerald-600",
     questions: [
       {
         id: 1,
-        question: 'Combien de joueurs composent une équipe de football sur le terrain ?',
-        options: ['10', '11', '12', '13'],
+        question:
+          "Combien de joueurs composent une équipe de football sur le terrain ?",
+        options: ["10", "11", "12", "13"],
         correctAnswer: 1,
-        explanation: "Une équipe de football est composée de 11 joueurs, 10 sur le terrain et 1 remplaçant."
+        explanation:
+          "Une équipe de football est composée de 11 joueurs, 10 sur le terrain et 1 remplaçant.",
       },
       {
         id: 2,
-        question: 'Tous les combien d\'années se déroulent les Jeux Olympiques d\'été ?',
-        options: ['2 ans', '3 ans', '4 ans', '5 ans'],
+        question:
+          "Tous les combien d'années se déroulent les Jeux Olympiques d'été ?",
+        options: ["2 ans", "3 ans", "4 ans", "5 ans"],
         correctAnswer: 2,
-        explanation: "Les Jeux Olympiques d'été ont lieu tous les 4 ans, sauf en cas d'année olympique."
+        explanation:
+          "Les Jeux Olympiques d'été ont lieu tous les 4 ans, sauf en cas d'année olympique.",
       },
       {
         id: 3,
-        question: 'Quel pays a remporté la Coupe du Monde de football en 2018 ?',
-        options: ['Brésil', 'Argentine', 'Allemagne', 'France'],
+        question:
+          "Quel pays a remporté la Coupe du Monde de football en 2018 ?",
+        options: ["Brésil", "Argentine", "Allemagne", "France"],
         correctAnswer: 3,
-        explanation: "La France a remporté la Coupe du Monde de football en 2018, battant la Croatie en finale."
+        explanation:
+          "La France a remporté la Coupe du Monde de football en 2018, battant la Croatie en finale.",
       },
       {
         id: 4,
-        question: 'Combien de sets faut-il remporter pour gagner un match de tennis masculin en Grand Chelem ?',
-        options: ['2', '3', '4', '5'],
+        question:
+          "Combien de sets faut-il remporter pour gagner un match de tennis masculin en Grand Chelem ?",
+        options: ["2", "3", "4", "5"],
         correctAnswer: 1,
-        explanation: "Pour gagner un match de tennis masculin en Grand Chelem, il faut remporter au moins 3 sets."
+        explanation:
+          "Pour gagner un match de tennis masculin en Grand Chelem, il faut remporter au moins 3 sets.",
       },
       {
         id: 5,
-        question: 'Quel sport pratique-t-on à Wimbledon ?',
-        options: ['Golf', 'Cricket', 'Tennis', 'Rugby'],
+        question: "Quel sport pratique-t-on à Wimbledon ?",
+        options: ["Golf", "Cricket", "Tennis", "Rugby"],
         correctAnswer: 2,
-        explanation: "Wimbledon est un tournoi de tennis qui se déroule chaque année à Londres."
-      }
-    ]
+        explanation:
+          "Wimbledon est un tournoi de tennis qui se déroule chaque année à Londres.",
+      },
+    ],
   },
   {
-    id: 'node-express',
-    name: 'Node.js & Express',
-    icon: '💻',
-    description: 'Questions pour réviser Node.js & Express.js',
-    color: 'from-gray-700 to-gray-900',
+    id: "node-express",
+    name: "Node.js & Express",
+    icon: "💻",
+    description: "Questions pour réviser Node.js & Express.js",
+    color: "from-gray-700 to-gray-900",
     questions: [
       {
         id: 1,
-        question: 'Quel module Node.js est utilisé pour créer un serveur HTTP ?',
-        options: ['fs', 'http', 'express', 'net'],
+        question:
+          "Quel module Node.js est utilisé pour créer un serveur HTTP ?",
+        options: ["fs", "http", "express", "net"],
         correctAnswer: 1,
-        explanation: "Le module 'http' de Node.js est le plus basique pour créer un serveur HTTP. Il permet de gérer les requêtes et les réponses HTTP."
+        explanation:
+          "Le module 'http' de Node.js est le plus basique pour créer un serveur HTTP. Il permet de gérer les requêtes et les réponses HTTP.",
       },
       {
         id: 2,
-        question: 'Quelle commande permet d\'initialiser un projet Node.js ?',
-        options: ['npm start', 'node init', 'npm init', 'node start'],
+        question: "Quelle commande permet d'initialiser un projet Node.js ?",
+        options: ["npm start", "node init", "npm init", "node start"],
         correctAnswer: 2,
-        explanation: "La commande 'npm init' est utilisée pour initialiser un nouveau projet Node.js. Elle crée un fichier package.json."
+        explanation:
+          "La commande 'npm init' est utilisée pour initialiser un nouveau projet Node.js. Elle crée un fichier package.json.",
       },
       {
         id: 3,
-        question: 'Quel est le gestionnaire de paquets par défaut de Node.js ?',
-        options: ['yarn', 'pnpm', 'composer', 'npm'],
+        question: "Quel est le gestionnaire de paquets par défaut de Node.js ?",
+        options: ["yarn", "pnpm", "composer", "npm"],
         correctAnswer: 3,
-        explanation: "npm est le gestionnaire de paquets par défaut de Node.js. Il permet d'installer, de gérer et de désinstaller les dépendances d'un projet."
+        explanation:
+          "npm est le gestionnaire de paquets par défaut de Node.js. Il permet d'installer, de gérer et de désinstaller les dépendances d'un projet.",
       },
       {
         id: 4,
-        question: 'Quel middleware Express sert à parser le JSON dans les requêtes ?',
-        options: ['express.body()', 'express.json()', 'bodyParser()', 'express.data()'],
+        question:
+          "Quel middleware Express sert à parser le JSON dans les requêtes ?",
+        options: [
+          "express.body()",
+          "express.json()",
+          "bodyParser()",
+          "express.data()",
+        ],
         correctAnswer: 1,
-        explanation: "Le middleware 'express.json()' est utilisé pour parser le JSON dans les requêtes HTTP. Il est généralement configuré avec app.use(express.json())."
+        explanation:
+          "Le middleware 'express.json()' est utilisé pour parser le JSON dans les requêtes HTTP. Il est généralement configuré avec app.use(express.json()).",
       },
       {
         id: 5,
-        question: 'Quelle méthode HTTP est utilisée pour créer une ressource ?',
-        options: ['GET', 'POST', 'PUT', 'DELETE'],
+        question: "Quelle méthode HTTP est utilisée pour créer une ressource ?",
+        options: ["GET", "POST", "PUT", "DELETE"],
         correctAnswer: 1,
-        explanation: "La méthode HTTP 'POST' est utilisée pour créer une nouvelle ressource sur le serveur. Elle est souvent utilisée pour envoyer des données au serveur."
+        explanation:
+          "La méthode HTTP 'POST' est utilisée pour créer une nouvelle ressource sur le serveur. Elle est souvent utilisée pour envoyer des données au serveur.",
       },
       {
         id: 6,
-        question: 'Quelle méthode Express est utilisée pour définir une route GET ?',
-        options: ['app.post()', 'app.get()', 'app.route()', 'app.fetch()'],
+        question:
+          "Quelle méthode Express est utilisée pour définir une route GET ?",
+        options: ["app.post()", "app.get()", "app.route()", "app.fetch()"],
         correctAnswer: 1,
-        explanation: "La méthode 'app.get()' est utilisée pour définir une route qui répond à une requête HTTP de type GET. Elle est généralement utilisée pour récupérer des données."
+        explanation:
+          "La méthode 'app.get()' est utilisée pour définir une route qui répond à une requête HTTP de type GET. Elle est généralement utilisée pour récupérer des données.",
       },
       {
         id: 7,
-        question: 'Quel package Node.js permet de gérer les variables d\'environnement ?',
-        options: ['dotenv', 'env', 'config', 'settings'],
+        question:
+          "Quel package Node.js permet de gérer les variables d'environnement ?",
+        options: ["dotenv", "env", "config", "settings"],
         correctAnswer: 0,
-        explanation: "Le package 'dotenv' est utilisé pour gérer les variables d'environnement dans un projet Node.js. Il permet de charger des variables depuis un fichier .env."
+        explanation:
+          "Le package 'dotenv' est utilisé pour gérer les variables d'environnement dans un projet Node.js. Il permet de charger des variables depuis un fichier .env.",
       },
       {
         id: 8,
-        question: 'Que fait la méthode res.json() en Express ?',
-        options: ['Envoie une vue HTML', 'Envoie des données JSON', 'Redirige vers une autre page', 'Exécute un middleware'],
+        question: "Que fait la méthode res.json() en Express ?",
+        options: [
+          "Envoie une vue HTML",
+          "Envoie des données JSON",
+          "Redirige vers une autre page",
+          "Exécute un middleware",
+        ],
         correctAnswer: 1,
-        explanation: "La méthode 'res.json()' est utilisée pour envoyer une réponse JSON au client. Elle est souvent utilisée pour renvoyer des données au format JSON."
+        explanation:
+          "La méthode 'res.json()' est utilisée pour envoyer une réponse JSON au client. Elle est souvent utilisée pour renvoyer des données au format JSON.",
       },
       {
         id: 9,
-        question: 'Quelle commande démarre un fichier avec nodemon ?',
-        options: ['nodemon app.js', 'node app.js', 'npm start', 'node run app.js'],
+        question: "Quelle commande démarre un fichier avec nodemon ?",
+        options: [
+          "nodemon app.js",
+          "node app.js",
+          "npm start",
+          "node run app.js",
+        ],
         correctAnswer: 0,
-        explanation: "La commande 'nodemon app.js' est utilisée pour démarrer l'application Node.js avec nodemon. nodemon est un outil qui redémarre automatiquement le serveur lorsqu'un fichier change."
+        explanation:
+          "La commande 'nodemon app.js' est utilisée pour démarrer l'application Node.js avec nodemon. nodemon est un outil qui redémarre automatiquement le serveur lorsqu'un fichier change.",
       },
       {
         id: 10,
-        question: 'Comment se nomme la méthode pour écouter un port en Express ?',
-        options: ['app.connect()', 'app.listen()', 'app.start()', 'app.begin()'],
+        question:
+          "Comment se nomme la méthode pour écouter un port en Express ?",
+        options: [
+          "app.connect()",
+          "app.listen()",
+          "app.start()",
+          "app.begin()",
+        ],
         correctAnswer: 1,
-        explanation: "La méthode 'app.listen()' est utilisée pour écouter un port spécifique sur le serveur. Elle est généralement appelée après la définition des routes."
+        explanation:
+          "La méthode 'app.listen()' est utilisée pour écouter un port spécifique sur le serveur. Elle est généralement appelée après la définition des routes.",
       },
       {
         id: 11,
-        question: 'Quelle est la méthode pour importer un module en CommonJS ?',
-        options: ['import ... from ...', 'require()', 'include()', 'use()'],
+        question: "Quelle est la méthode pour importer un module en CommonJS ?",
+        options: ["import ... from ...", "require()", "include()", "use()"],
         correctAnswer: 1,
-        explanation: "La méthode 'require()' est utilisée pour importer un module en CommonJS. Elle permet d'accéder aux fonctions, objets et variables définis dans le module."
+        explanation:
+          "La méthode 'require()' est utilisée pour importer un module en CommonJS. Elle permet d'accéder aux fonctions, objets et variables définis dans le module.",
       },
       {
         id: 12,
-        question: 'Quel package Express permet la gestion des CORS ?',
-        options: ['cors', 'helmet', 'body-parser', 'express-cors'],
+        question: "Quel package Express permet la gestion des CORS ?",
+        options: ["cors", "helmet", "body-parser", "express-cors"],
         correctAnswer: 0,
-        explanation: "Le package 'cors' est utilisé pour gérer les requêtes HTTP CORS (Cross-Origin Resource Sharing). Il permet de contrôler les en-têtes HTTP pour autoriser les requêtes provenant d'origines différentes."
+        explanation:
+          "Le package 'cors' est utilisé pour gérer les requêtes HTTP CORS (Cross-Origin Resource Sharing). Il permet de contrôler les en-têtes HTTP pour autoriser les requêtes provenant d'origines différentes.",
       },
       {
         id: 13,
-        question: 'Quelle méthode Express est utilisée pour définir une route POST ?',
-        options: ['app.fetch()', 'app.route()', 'app.post()', 'app.put()'],
+        question:
+          "Quelle méthode Express est utilisée pour définir une route POST ?",
+        options: ["app.fetch()", "app.route()", "app.post()", "app.put()"],
         correctAnswer: 2,
-        explanation: "La méthode 'app.post()' est utilisée pour définir une route qui répond à une requête HTTP de type POST. Elle est généralement utilisée pour envoyer des données au serveur."
+        explanation:
+          "La méthode 'app.post()' est utilisée pour définir une route qui répond à une requête HTTP de type POST. Elle est généralement utilisée pour envoyer des données au serveur.",
       },
       {
         id: 14,
-        question: 'Quel est le rôle de la méthode next() dans un middleware Express ?',
-        options: ['Terminer la réponse', 'Passer au middleware suivant', 'Créer une erreur', 'Fermer la requête'],
+        question:
+          "Quel est le rôle de la méthode next() dans un middleware Express ?",
+        options: [
+          "Terminer la réponse",
+          "Passer au middleware suivant",
+          "Créer une erreur",
+          "Fermer la requête",
+        ],
         correctAnswer: 1,
-        explanation: "La méthode 'next()' est utilisée pour passer au middleware suivant dans la chaîne de middleware. Elle est généralement appelée à la fin d'un middleware pour indiquer que le traitement est terminé."
+        explanation:
+          "La méthode 'next()' est utilisée pour passer au middleware suivant dans la chaîne de middleware. Elle est généralement appelée à la fin d'un middleware pour indiquer que le traitement est terminé.",
       },
       {
         id: 15,
-        question: 'Quel est le port par défaut d\'un serveur HTTP ?',
-        options: ['80', '3000', '8080', '443'],
+        question: "Quel est le port par défaut d'un serveur HTTP ?",
+        options: ["80", "3000", "8080", "443"],
         correctAnswer: 0,
-        explanation: "Le port 80 est le port par défaut pour le HTTP non sécurisé. Il est généralement utilisé pour les requêtes HTTP de base."
+        explanation:
+          "Le port 80 est le port par défaut pour le HTTP non sécurisé. Il est généralement utilisé pour les requêtes HTTP de base.",
       },
       {
         id: 16,
-        question: 'Quelle fonction permet de lire un fichier en Node.js ?',
-        options: ['fs.readFile()', 'file.read()', 'fs.read()', 'fileSystem.read()'],
+        question: "Quelle fonction permet de lire un fichier en Node.js ?",
+        options: [
+          "fs.readFile()",
+          "file.read()",
+          "fs.read()",
+          "fileSystem.read()",
+        ],
         correctAnswer: 0,
-        explanation: "La fonction 'fs.readFile()' est utilisée pour lire le contenu d'un fichier en Node.js. Elle prend en argument le chemin du fichier et une fonction de callback."
+        explanation:
+          "La fonction 'fs.readFile()' est utilisée pour lire le contenu d'un fichier en Node.js. Elle prend en argument le chemin du fichier et une fonction de callback.",
       },
       {
         id: 17,
-        question: 'Quel est le type de modèle utilisé par Express ?',
-        options: ['MVC', 'MVVM', 'Flux', 'CQRS'],
+        question: "Quel est le type de modèle utilisé par Express ?",
+        options: ["MVC", "MVVM", "Flux", "CQRS"],
         correctAnswer: 0,
-        explanation: "Express est un framework minimaliste pour Node.js qui utilise le modèle MVC (Model-View-Controller) pour organiser le code."
+        explanation:
+          "Express est un framework minimaliste pour Node.js qui utilise le modèle MVC (Model-View-Controller) pour organiser le code.",
       },
       {
         id: 18,
-        question: 'Quel module gère les chemins de fichiers en Node.js ?',
-        options: ['fs', 'path', 'file', 'os'],
+        question: "Quel module gère les chemins de fichiers en Node.js ?",
+        options: ["fs", "path", "file", "os"],
         correctAnswer: 1,
-        explanation: "Le module 'path' est utilisé pour manipuler les chemins de fichiers et les résoudre. Il est souvent utilisé pour construire des chemins de fichiers relatifs."
+        explanation:
+          "Le module 'path' est utilisé pour manipuler les chemins de fichiers et les résoudre. Il est souvent utilisé pour construire des chemins de fichiers relatifs.",
       },
       {
         id: 19,
-        question: 'Quel package Node.js gère les requêtes HTTP clients ?',
-        options: ['axios', 'express', 'http-client', 'request'],
+        question: "Quel package Node.js gère les requêtes HTTP clients ?",
+        options: ["axios", "express", "http-client", "request"],
         correctAnswer: 0,
-        explanation: "Le package 'axios' est un client HTTP basé sur Promise pour faire des requêtes HTTP. Il est souvent utilisé pour interagir avec des API REST."
+        explanation:
+          "Le package 'axios' est un client HTTP basé sur Promise pour faire des requêtes HTTP. Il est souvent utilisé pour interagir avec des API REST.",
       },
       {
         id: 20,
-        question: 'Quel middleware Express est souvent utilisé pour la gestion des erreurs ?',
-        options: ['app.use()', 'errorHandler()', 'catch()', 'try()'],
+        question:
+          "Quel middleware Express est souvent utilisé pour la gestion des erreurs ?",
+        options: ["app.use()", "errorHandler()", "catch()", "try()"],
         correctAnswer: 0,
-        explanation: "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc."
+        explanation:
+          "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc.",
       },
       {
         id: 21,
-        question: 'Quelle commande installe Express ?',
-        options: ['npm get express', 'npm fetch express', 'npm install express', 'npm require express'],
+        question: "Quelle commande installe Express ?",
+        options: [
+          "npm get express",
+          "npm fetch express",
+          "npm install express",
+          "npm require express",
+        ],
         correctAnswer: 2,
-        explanation: "La commande 'npm install express' est utilisée pour installer le package Express.js dans un projet Node.js."
+        explanation:
+          "La commande 'npm install express' est utilisée pour installer le package Express.js dans un projet Node.js.",
       },
       {
         id: 22,
-        question: 'Que renvoie la méthode res.send() ?',
-        options: ['Un fichier', 'Un JSON', 'Une réponse textuelle ou HTML', 'Un status code'],
+        question: "Que renvoie la méthode res.send() ?",
+        options: [
+          "Un fichier",
+          "Un JSON",
+          "Une réponse textuelle ou HTML",
+          "Un status code",
+        ],
         correctAnswer: 2,
-        explanation: "La méthode 'res.send()' est utilisée pour envoyer une réponse HTTP au client. Elle peut être utilisée pour envoyer du texte, des objets JSON, des fichiers, etc."
+        explanation:
+          "La méthode 'res.send()' est utilisée pour envoyer une réponse HTTP au client. Elle peut être utilisée pour envoyer du texte, des objets JSON, des fichiers, etc.",
       },
       {
         id: 23,
-        question: 'Quelle méthode Express supprime une ressource ?',
-        options: ['app.remove()', 'app.delete()', 'app.del()', 'app.destroy()'],
+        question: "Quelle méthode Express supprime une ressource ?",
+        options: ["app.remove()", "app.delete()", "app.del()", "app.destroy()"],
         correctAnswer: 1,
-        explanation: "La méthode 'app.delete()' est utilisée pour supprimer une ressource spécifique. Elle est généralement utilisée pour supprimer des données d'un serveur."
+        explanation:
+          "La méthode 'app.delete()' est utilisée pour supprimer une ressource spécifique. Elle est généralement utilisée pour supprimer des données d'un serveur.",
       },
       {
         id: 24,
-        question: 'Quel middleware est utilisé pour les cookies ?',
-        options: ['cookie-parser', 'express-session', 'body-parser', 'cookies'],
+        question: "Quel middleware est utilisé pour les cookies ?",
+        options: ["cookie-parser", "express-session", "body-parser", "cookies"],
         correctAnswer: 0,
-        explanation: "Le middleware 'cookie-parser' est utilisé pour parser les cookies envoyés par le client. Il est généralement configuré avec app.use(cookieParser())."
+        explanation:
+          "Le middleware 'cookie-parser' est utilisé pour parser les cookies envoyés par le client. Il est généralement configuré avec app.use(cookieParser()).",
       },
       {
         id: 25,
-        question: 'Quel objet Node.js représente la réponse HTTP ?',
-        options: ['res', 'req', 'next', 'server'],
+        question: "Quel objet Node.js représente la réponse HTTP ?",
+        options: ["res", "req", "next", "server"],
         correctAnswer: 0,
-        explanation: "L'objet 'res' (response) est utilisé pour contrôler la réponse HTTP envoyée au client. Il permet de définir les en-têtes, le statut, le corps de la réponse, etc."
+        explanation:
+          "L'objet 'res' (response) est utilisé pour contrôler la réponse HTTP envoyée au client. Il permet de définir les en-têtes, le statut, le corps de la réponse, etc.",
       },
       {
         id: 26,
-        question: 'Comment gérer les fichiers statiques en Express ?',
-        options: ['app.static()', 'express.static()', 'app.serve()', 'app.files()'],
+        question: "Comment gérer les fichiers statiques en Express ?",
+        options: [
+          "app.static()",
+          "express.static()",
+          "app.serve()",
+          "app.files()",
+        ],
         correctAnswer: 1,
-        explanation: "Le middleware 'express.static()' est utilisé pour servir des fichiers statiques (CSS, JS, images, etc.) depuis le dossier 'public'. Il est généralement configuré avec app.use(express.static('public'))."
+        explanation:
+          "Le middleware 'express.static()' est utilisé pour servir des fichiers statiques (CSS, JS, images, etc.) depuis le dossier 'public'. Il est généralement configuré avec app.use(express.static('public')).",
       },
       {
         id: 27,
-        question: 'Quel est le but de Express Router ?',
-        options: ['Gérer les routes modulaires', 'Définir un serveur HTTP', 'Envoyer une réponse', 'Gérer les sessions'],
+        question: "Quel est le but de Express Router ?",
+        options: [
+          "Gérer les routes modulaires",
+          "Définir un serveur HTTP",
+          "Envoyer une réponse",
+          "Gérer les sessions",
+        ],
         correctAnswer: 0,
-        explanation: "Express Router est utilisé pour organiser les routes d'une application en modules. Chaque route est définie dans un fichier séparé, ce qui rend le code plus organisé et plus facile à maintenir."
+        explanation:
+          "Express Router est utilisé pour organiser les routes d'une application en modules. Chaque route est définie dans un fichier séparé, ce qui rend le code plus organisé et plus facile à maintenir.",
       },
       {
         id: 28,
-        question: 'Quelle méthode Express renvoie une erreur 404 ?',
-        options: ['app.notFound()', 'res.status(404).send()', 'app.error404()', 'app.pageNotFound()'],
+        question: "Quelle méthode Express renvoie une erreur 404 ?",
+        options: [
+          "app.notFound()",
+          "res.status(404).send()",
+          "app.error404()",
+          "app.pageNotFound()",
+        ],
         correctAnswer: 1,
-        explanation: "La méthode 'app.notFound()' est utilisée pour gérer les requêtes qui n'ont pas trouvé de route correspondante. Elle envoie généralement une réponse 404 avec un message d'erreur."
+        explanation:
+          "La méthode 'app.notFound()' est utilisée pour gérer les requêtes qui n'ont pas trouvé de route correspondante. Elle envoie généralement une réponse 404 avec un message d'erreur.",
       },
       {
         id: 29,
-        question: 'Quel est le rôle du middleware body-parser ?',
-        options: ['Analyser les cookies', 'Analyser le corps des requêtes', 'Gérer les sessions', 'Envoyer les fichiers statiques'],
+        question: "Quel est le rôle du middleware body-parser ?",
+        options: [
+          "Analyser les cookies",
+          "Analyser le corps des requêtes",
+          "Gérer les sessions",
+          "Envoyer les fichiers statiques",
+        ],
         correctAnswer: 1,
-        explanation: "Le middleware 'body-parser' est utilisé pour parser le corps des requêtes HTTP. Il est généralement configuré avec app.use(express.json()) et app.use(express.urlencoded()) pour parser le JSON et le formulaire URL."
+        explanation:
+          "Le middleware 'body-parser' est utilisé pour parser le corps des requêtes HTTP. Il est généralement configuré avec app.use(express.json()) et app.use(express.urlencoded()) pour parser le JSON et le formulaire URL.",
       },
       {
         id: 30,
-        question: 'Quel package permet de crypter les mots de passe ?',
-        options: ['bcrypt', 'crypto', 'md5', 'argon2'],
+        question: "Quel package permet de crypter les mots de passe ?",
+        options: ["bcrypt", "crypto", "md5", "argon2"],
         correctAnswer: 0,
-        explanation: "Le package 'bcrypt' est utilisé pour crypter les mots de passe de manière sécurisée. Il est généralement utilisé pour stocker les mots de passe dans la base de données."
+        explanation:
+          "Le package 'bcrypt' est utilisé pour crypter les mots de passe de manière sécurisée. Il est généralement utilisé pour stocker les mots de passe dans la base de données.",
       },
       {
         id: 31,
-        question: 'Quel package permet la gestion des sessions en Express ?',
-        options: ['express-session', 'session-express', 'session', 'cookie-session'],
+        question: "Quel package permet la gestion des sessions en Express ?",
+        options: [
+          "express-session",
+          "session-express",
+          "session",
+          "cookie-session",
+        ],
         correctAnswer: 0,
-        explanation: "Le package 'express-session' est utilisé pour gérer les sessions HTTP. Il permet de stocker des données utilisateur dans le cookie de session."
+        explanation:
+          "Le package 'express-session' est utilisé pour gérer les sessions HTTP. Il permet de stocker des données utilisateur dans le cookie de session.",
       },
       {
         id: 32,
-        question: 'Quel est le rôle de middleware ?',
-        options: ['Gérer les erreurs', 'Intercepter et traiter la requête', 'Créer des routes', 'Créer des modèles'],
+        question: "Quel est le rôle de middleware ?",
+        options: [
+          "Gérer les erreurs",
+          "Intercepter et traiter la requête",
+          "Créer des routes",
+          "Créer des modèles",
+        ],
         correctAnswer: 1,
-        explanation: "Un middleware est un composant qui intercepte les requêtes HTTP et les traite avant qu'elles ne soient envoyées au routeur. Il peut être utilisé pour la gestion des erreurs, la vérification de l'authentification, etc."
+        explanation:
+          "Un middleware est un composant qui intercepte les requêtes HTTP et les traite avant qu'elles ne soient envoyées au routeur. Il peut être utilisé pour la gestion des erreurs, la vérification de l'authentification, etc.",
       },
       {
         id: 33,
-        question: 'Quel est le rôle de la méthode res.redirect() ?',
-        options: ['Rediriger le client', 'Afficher une erreur', 'Envoyer un JSON', 'Créer une vue'],
+        question: "Quel est le rôle de la méthode res.redirect() ?",
+        options: [
+          "Rediriger le client",
+          "Afficher une erreur",
+          "Envoyer un JSON",
+          "Créer une vue",
+        ],
         correctAnswer: 0,
-        explanation: "La méthode 'res.redirect()' est utilisée pour rediriger le client vers une autre URL. Elle est généralement utilisée pour gérer les requêtes de redirection HTTP."
+        explanation:
+          "La méthode 'res.redirect()' est utilisée pour rediriger le client vers une autre URL. Elle est généralement utilisée pour gérer les requêtes de redirection HTTP.",
       },
       {
         id: 34,
-        question: 'Quel est le rôle de app.use() ?',
-        options: ['Créer une route', 'Enregistrer un middleware', 'Créer une vue', 'Envoyer une réponse'],
+        question: "Quel est le rôle de app.use() ?",
+        options: [
+          "Créer une route",
+          "Enregistrer un middleware",
+          "Créer une vue",
+          "Envoyer une réponse",
+        ],
         correctAnswer: 1,
-        explanation: "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc."
+        explanation:
+          "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc.",
       },
       {
         id: 35,
-        question: 'Quel module est utilisé pour travailler avec les événements ?',
-        options: ['events', 'ev', 'observer', 'event-handler'],
+        question:
+          "Quel module est utilisé pour travailler avec les événements ?",
+        options: ["events", "ev", "observer", "event-handler"],
         correctAnswer: 0,
-        explanation: "Le module 'events' est utilisé pour créer et gérer des événements. Il est généralement utilisé avec EventEmitter pour la gestion des événements asynchrones."
+        explanation:
+          "Le module 'events' est utilisé pour créer et gérer des événements. Il est généralement utilisé avec EventEmitter pour la gestion des événements asynchrones.",
       },
       {
         id: 36,
-        question: 'Quel est le gestionnaire d\'événements natif de Node.js ?',
-        options: ['EventEmitter', 'EventDispatcher', 'EventManager', 'EventListener'],
+        question: "Quel est le gestionnaire d'événements natif de Node.js ?",
+        options: [
+          "EventEmitter",
+          "EventDispatcher",
+          "EventManager",
+          "EventListener",
+        ],
         correctAnswer: 0,
-        explanation: "EventEmitter est le gestionnaire d'événements natif de Node.js. Il permet de créer et d'écouter des événements asynchrones."
+        explanation:
+          "EventEmitter est le gestionnaire d'événements natif de Node.js. Il permet de créer et d'écouter des événements asynchrones.",
       },
       {
         id: 37,
-        question: 'Quel type de boucle d\'événement utilise Node.js ?',
-        options: ['multi-threaded', 'single-threaded', 'multi-processed', 'multi-event'],
+        question: "Quel type de boucle d'événement utilise Node.js ?",
+        options: [
+          "multi-threaded",
+          "single-threaded",
+          "multi-processed",
+          "multi-event",
+        ],
         correctAnswer: 1,
-        explanation: "Node.js utilise un modèle d'événement unique (single-threaded) pour gérer les requêtes HTTP. Cela signifie qu'il n'y a qu'un seul thread d'exécution à la fois."
+        explanation:
+          "Node.js utilise un modèle d'événement unique (single-threaded) pour gérer les requêtes HTTP. Cela signifie qu'il n'y a qu'un seul thread d'exécution à la fois.",
       },
       {
         id: 38,
-        question: 'Quel est le rôle de process.env ?',
-        options: ['Lire des fichiers', 'Lire des variables d\'environnement', 'Créer des routes', 'Lancer un serveur'],
+        question: "Quel est le rôle de process.env ?",
+        options: [
+          "Lire des fichiers",
+          "Lire des variables d'environnement",
+          "Créer des routes",
+          "Lancer un serveur",
+        ],
         correctAnswer: 1,
-        explanation: "Le module 'process.env' est utilisé pour accéder aux variables d'environnement du système d'exploitation. Il permet de lire les variables définies dans le fichier .env."
+        explanation:
+          "Le module 'process.env' est utilisé pour accéder aux variables d'environnement du système d'exploitation. Il permet de lire les variables définies dans le fichier .env.",
       },
       {
         id: 39,
-        question: 'Quel package Express est utilisé pour sécuriser les en-têtes HTTP ?',
-        options: ['cors', 'helmet', 'secure', 'express-secure'],
+        question:
+          "Quel package Express est utilisé pour sécuriser les en-têtes HTTP ?",
+        options: ["cors", "helmet", "secure", "express-secure"],
         correctAnswer: 1,
-        explanation: "Le package 'helmet' est utilisé pour sécuriser les en-têtes HTTP. Il ajoute des en-têtes de sécurité pour protéger l'application contre les attaques XSS, CSRF, etc."
+        explanation:
+          "Le package 'helmet' est utilisé pour sécuriser les en-têtes HTTP. Il ajoute des en-têtes de sécurité pour protéger l'application contre les attaques XSS, CSRF, etc.",
       },
       {
         id: 40,
-        question: 'Quel est le rôle de async/await en Node.js ?',
-        options: ['Créer une boucle', 'Créer un serveur', 'Gérer l\'asynchronisme', 'Envoyer une réponse'],
+        question: "Quel est le rôle de async/await en Node.js ?",
+        options: [
+          "Créer une boucle",
+          "Créer un serveur",
+          "Gérer l'asynchronisme",
+          "Envoyer une réponse",
+        ],
         correctAnswer: 2,
-        explanation: "async/await est utilisé pour gérer l'asynchronisme en JavaScript. Il permet d'écrire du code de manière séquentielle, tout en attendant les résultats des opérations asynchrones."
+        explanation:
+          "async/await est utilisé pour gérer l'asynchronisme en JavaScript. Il permet d'écrire du code de manière séquentielle, tout en attendant les résultats des opérations asynchrones.",
       },
       {
         id: 41,
-        question: 'Quel package permet la gestion des erreurs asynchrones ?',
-        options: ['express-async-errors', 'express-catch', 'express-errors', 'error-handler'],
+        question: "Quel package permet la gestion des erreurs asynchrones ?",
+        options: [
+          "express-async-errors",
+          "express-catch",
+          "express-errors",
+          "error-handler",
+        ],
         correctAnswer: 0,
-        explanation: "Le package 'express-async-errors' est utilisé pour gérer les erreurs asynchrones dans Express.js. Il permet de capturer les erreurs qui surviennent lors de l'exécution de fonctions asynchrones."
+        explanation:
+          "Le package 'express-async-errors' est utilisé pour gérer les erreurs asynchrones dans Express.js. Il permet de capturer les erreurs qui surviennent lors de l'exécution de fonctions asynchrones.",
       },
       {
         id: 42,
-        question: 'Comment ajouter un middleware global dans Express ?',
-        options: ['app.global()', 'app.use()', 'app.middleware()', 'app.register()'],
+        question: "Comment ajouter un middleware global dans Express ?",
+        options: [
+          "app.global()",
+          "app.use()",
+          "app.middleware()",
+          "app.register()",
+        ],
         correctAnswer: 1,
-        explanation: "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc."
+        explanation:
+          "Le middleware 'app.use()' est utilisé pour enregistrer des middlewares globaux. Il peut être utilisé pour la gestion des erreurs, la configuration des en-têtes, etc.",
       },
       {
         id: 43,
-        question: 'Que renvoie la méthode res.status() ?',
-        options: ['Un code HTML', 'Un fichier', 'Un code de statut HTTP', 'Un objet JSON'],
+        question: "Que renvoie la méthode res.status() ?",
+        options: [
+          "Un code HTML",
+          "Un fichier",
+          "Un code de statut HTTP",
+          "Un objet JSON",
+        ],
         correctAnswer: 2,
-        explanation: "La méthode 'res.status()' est utilisée pour définir le code de statut HTTP de la réponse. Elle peut être suivie de 'send()', 'json()', 'redirect()', etc."
+        explanation:
+          "La méthode 'res.status()' est utilisée pour définir le code de statut HTTP de la réponse. Elle peut être suivie de 'send()', 'json()', 'redirect()', etc.",
       },
       {
         id: 44,
-        question: 'Quel middleware est utilisé pour uploader des fichiers ?',
-        options: ['file-uploader', 'multer', 'express-uploader', 'upload'],
+        question: "Quel middleware est utilisé pour uploader des fichiers ?",
+        options: ["file-uploader", "multer", "express-uploader", "upload"],
         correctAnswer: 1,
-        explanation: "Le package 'multer' est utilisé pour gérer le téléchargement de fichiers dans Express.js. Il permet de parser les fichiers envoyés via les requêtes HTTP."
+        explanation:
+          "Le package 'multer' est utilisé pour gérer le téléchargement de fichiers dans Express.js. Il permet de parser les fichiers envoyés via les requêtes HTTP.",
       },
       {
         id: 45,
-        question: 'Quel module natif de Node.js gère les opérations réseau bas niveau ?',
-        options: ['net', 'tcp', 'socket', 'connection'],
+        question:
+          "Quel module natif de Node.js gère les opérations réseau bas niveau ?",
+        options: ["net", "tcp", "socket", "connection"],
         correctAnswer: 0,
-        explanation: "Le module 'net' est utilisé pour créer des serveurs TCP/IP et des clients. Il permet de gérer les connexions réseau, les flux de données, etc."
+        explanation:
+          "Le module 'net' est utilisé pour créer des serveurs TCP/IP et des clients. Il permet de gérer les connexions réseau, les flux de données, etc.",
       },
       {
         id: 46,
-        question: 'Quel module natif de Node.js permet de créer des serveurs HTTPS ?',
-        options: ['https', 'ssl', 'secure', 'tls'],
+        question:
+          "Quel module natif de Node.js permet de créer des serveurs HTTPS ?",
+        options: ["https", "ssl", "secure", "tls"],
         correctAnswer: 0,
-        explanation: "Le module 'https' est utilisé pour créer des serveurs HTTPS sécurisés. Il permet de gérer les connexions SSL/TLS."
+        explanation:
+          "Le module 'https' est utilisé pour créer des serveurs HTTPS sécurisés. Il permet de gérer les connexions SSL/TLS.",
       },
       {
         id: 47,
-        question: 'Quelle méthode Express supprime un middleware ?',
-        options: ['app.unuse()', 'app.deleteMiddleware()', 'app.remove()', 'Impossible, il faut redémarrer le serveur'],
+        question: "Quelle méthode Express supprime un middleware ?",
+        options: [
+          "app.unuse()",
+          "app.deleteMiddleware()",
+          "app.remove()",
+          "Impossible, il faut redémarrer le serveur",
+        ],
         correctAnswer: 3,
-        explanation: "La méthode 'app.remove()' est utilisée pour supprimer un middleware spécifique enregistré avec 'app.use()'. Il faut redémarrer le serveur pour que les changements prennent effet."
+        explanation:
+          "La méthode 'app.remove()' est utilisée pour supprimer un middleware spécifique enregistré avec 'app.use()'. Il faut redémarrer le serveur pour que les changements prennent effet.",
       },
       {
         id: 48,
-        question: 'Quel package permet de logger les requêtes HTTP ?',
-        options: ['morgan', 'logger', 'express-logger', 'log4js'],
+        question: "Quel package permet de logger les requêtes HTTP ?",
+        options: ["morgan", "logger", "express-logger", "log4js"],
         correctAnswer: 0,
-        explanation: "Le package 'morgan' est utilisé pour logger les requêtes HTTP dans Express.js. Il permet de journaliser les requêtes entrantes, les réponses, les erreurs, etc."
+        explanation:
+          "Le package 'morgan' est utilisé pour logger les requêtes HTTP dans Express.js. Il permet de journaliser les requêtes entrantes, les réponses, les erreurs, etc.",
       },
       {
         id: 49,
-        question: 'Quelle est la commande pour installer nodemon globalement ?',
-        options: ['npm i nodemon', 'npm install nodemon', 'npm install -g nodemon', 'npm i -g nodemon'],
+        question: "Quelle est la commande pour installer nodemon globalement ?",
+        options: [
+          "npm i nodemon",
+          "npm install nodemon",
+          "npm install -g nodemon",
+          "npm i -g nodemon",
+        ],
         correctAnswer: 2,
-        explanation: "La commande 'npm install -g nodemon' est utilisée pour installer nodemon globalement. nodemon est un outil qui redémarre automatiquement le serveur lorsqu'un fichier change."
+        explanation:
+          "La commande 'npm install -g nodemon' est utilisée pour installer nodemon globalement. nodemon est un outil qui redémarre automatiquement le serveur lorsqu'un fichier change.",
       },
       {
         id: 50,
-        question: 'Quel est le rôle de require() en Node.js ?',
-        options: ['Importer un module', 'Exporter un module', 'Lancer le serveur', 'Lire un fichier'],
+        question: "Quel est le rôle de require() en Node.js ?",
+        options: [
+          "Importer un module",
+          "Exporter un module",
+          "Lancer le serveur",
+          "Lire un fichier",
+        ],
         correctAnswer: 0,
-        explanation: "La fonction 'require()' est utilisée pour importer un module en CommonJS. Elle permet d'accéder aux fonctions, objets et variables définis dans le module."
-      }
-    ]
+        explanation:
+          "La fonction 'require()' est utilisée pour importer un module en CommonJS. Elle permet d'accéder aux fonctions, objets et variables définis dans le module.",
+      },
+    ],
   },
 
   {
-    id: 'php-base',
-    name: 'PHP - Bases 1',
-    icon: '🐘',
-    description: 'Les fondamentaux du langage PHP',
-    color: 'from-indigo-500 to-blue-600',
+    id: "php-base",
+    name: "PHP - Bases 1",
+    icon: "🐘",
+    description: "Les fondamentaux du langage PHP",
+    color: "from-indigo-500 to-blue-600",
     questions: [
       {
         id: 1,
-        question: 'Quelle est l’extension standard d’un fichier PHP ?',
-        options: ['.html', '.ph', '.php', '.js'],
+        question: "Quelle est l’extension standard d’un fichier PHP ?",
+        options: [".html", ".ph", ".php", ".js"],
         correctAnswer: 2,
-        explanation: "L'extension .php est la plus courante pour les fichiers PHP. Elle indique au serveur que le fichier doit être interprété comme du PHP."
+        explanation: `L’extension standard d’un fichier PHP est .php.
+Cela indique au serveur web que le fichier contient du code PHP qui doit être interprété avant d’être envoyé au navigateur. Par exemple, un fichier index.php peut contenir du code HTML et PHP.`,
       },
       {
         id: 2,
-        question: 'Quel mot-clé est utilisé pour déclarer une fonction en PHP ?',
-        options: ['method', 'func', 'function', 'define'],
+        question:
+          "Quel mot-clé est utilisé pour déclarer une fonction en PHP ?",
+        options: ["method", "func", "function", "define"],
         correctAnswer: 2,
-        explanation: "Le mot-clé 'function' est utilisé pour déclarer une fonction en PHP. Il est suivi du nom de la fonction et des paramètres entre parenthèses."
+        explanation:
+          "Le mot-clé `function` est utilisé pour déclarer une fonction en PHP. Il est suivi du nom de la fonction, de parenthèses pour les paramètres, et d’un bloc de code entre accolades.",
       },
+
       {
         id: 3,
         question: 'Quel est le résultat de `echo 2 + "2 chats";` ?',
-        options: ['22', '4', 'Erreur', '2'],
+        options: ["22", "4", "Erreur", "2"],
         correctAnswer: 1,
-        explanation: "L'opérateur '+' peut être utilisé pour concaténer des chaînes de caractères. Dans ce cas, '2' + '2 chats' = '22 chats'."
+        explanation:
+          'En PHP, l\'opérateur `+` convertit automatiquement les chaînes en nombres si possible. Ici, "2 chats" est converti en 2, donc 2 + 2 = 4.',
       },
+
       {
         id: 4,
-        question: 'Comment déclare-t-on une variable en PHP ?',
-        options: ['var x;', '$x;', 'let x;', 'x = 0;'],
+        question: "Comment déclare-t-on une variable en PHP ?",
+        options: ["var x;", "$x;", "let x;", "x = 0;"],
         correctAnswer: 1,
-        explanation: "La syntaxe '$' est utilisée pour déclarer une variable en PHP. 'var' est obsolète, 'let' est utilisé pour les variables de bloc."
+        explanation:
+          "En PHP, toutes les variables commencent par le symbole `$`. Par exemple : `$x = 5;` déclare et initialise une variable.",
       },
+
       {
         id: 5,
-        question: 'Quelle fonction permet d’afficher une information à l’écran ?',
-        options: ['print()', 'alert()', 'console.log()', 'display()'],
+        question:
+          "Quelle fonction permet d’afficher une information à l’écran ?",
+        options: ["print()", "alert()", "console.log()", "display()"],
         correctAnswer: 0,
-        explanation: "La fonction 'print()' est la plus basique pour afficher du texte à l'écran en PHP. Elle prend en argument la chaîne à afficher."
+        explanation:
+          "La fonction 'print()' ou 'echo' permettent d'afficher du texte en PHP. 'print' retourne toujours 1, tandis qu'echo est plus rapide.",
       },
       {
         id: 6,
-        question: 'Quelle est la bonne syntaxe pour les commentaires sur une ligne ?',
-        options: ['/* ... */', '# ...', '// ...', '<!-- ... -->'],
+        question:
+          "Quelle est la bonne syntaxe pour les commentaires sur une ligne ?",
+        options: ["/* ... */", "# ...", "// ...", "<!-- ... -->"],
         correctAnswer: 2,
-        explanation: "La syntaxe '//' est utilisée pour les commentaires sur une ligne en PHP. Elle commence par '//' et continue jusqu'à la fin de la ligne."
+        explanation:
+          "La syntaxe '//' est utilisée pour les commentaires sur une ligne en PHP. Elle commence par '//' et continue jusqu'à la fin de la ligne.",
       },
       {
         id: 7,
-        question: 'Quelle superglobale contient les données envoyées en POST ?',
-        options: ['$_POST', '$POST', 'POST', '$_DATA'],
+        question: "Quelle superglobale contient les données envoyées en POST ?",
+        options: ["$_POST", "$POST", "POST", "$_DATA"],
         correctAnswer: 0,
-        explanation: "La superglobale '$_POST' est utilisée pour accéder aux données envoyées via le formulaire HTML avec la méthode POST."
+        explanation:
+          "La superglobale '$_POST' est utilisée pour accéder aux données envoyées via le formulaire HTML avec la méthode POST.",
       },
       {
         id: 8,
-        question: 'Que fait `isset()` en PHP ?',
-        options: ['Crée une variable', 'Teste si une variable est définie', 'Efface une variable', 'Initialise à NULL'],
+        question: "Que fait `isset()` en PHP ?",
+        options: [
+          "Crée une variable",
+          "Teste si une variable est définie",
+          "Efface une variable",
+          "Initialise à NULL",
+        ],
         correctAnswer: 1,
-        explanation: "La fonction 'isset()' est utilisée pour vérifier si une variable est définie et n'est pas NULL. Elle retourne TRUE si la variable existe, FALSE sinon."
+        explanation:
+          "La fonction 'isset()' est utilisée pour vérifier si une variable est définie et n'est pas NULL. Elle retourne TRUE si la variable existe, FALSE sinon.",
       },
       {
         id: 9,
         question: 'Quel est le type retourné par `gettype("123")` ?',
-        options: ['integer', 'string', 'number', 'text'],
+        options: ["integer", "string", "number", "text"],
         correctAnswer: 1,
-        explanation: "La fonction 'gettype()' retourne le type de la variable. 'string' est le type pour les chaînes de caractères."
+        explanation:
+          "La fonction 'gettype()' retourne le type de la variable. 'string' est le type pour les chaînes de caractères.",
       },
       {
         id: 10,
         question: 'Que renvoie `empty("")` ?',
-        options: ['true', 'false', 'null', 'Erreur'],
+        options: ["true", "false", "null", "Erreur"],
         correctAnswer: 0,
-        explanation: `La fonction 'empty()' retourne TRUE si la variable est vide ou n'existe pas. Dans ce cas, '' est une chaîne vide, donc 'empty("")' renvoie TRUE.`
+        explanation: `La fonction 'empty()' retourne TRUE si la variable est vide ou n'existe pas. Dans ce cas, '' est une chaîne vide, donc 'empty("")' renvoie TRUE.`,
       },
       {
         id: 11,
-        question: 'Quelle fonction permet d’inclure un fichier PHP une seule fois ?',
-        options: ['include', 'import', 'require_once', 'add'],
+        question:
+          "Quelle fonction permet d’inclure un fichier PHP une seule fois ?",
+        options: ["include", "import", "require_once", "add"],
         correctAnswer: 2,
-        explanation: "La fonction 'require_once()' est utilisée pour inclure un fichier PHP une seule fois. Elle empêche la redéfinition de la fonction si le fichier est déjà inclus."
+        explanation:
+          "La fonction 'require_once()' est utilisée pour inclure un fichier PHP une seule fois. Elle empêche la redéfinition de la fonction si le fichier est déjà inclus.",
       },
       {
         id: 12,
-        question: 'Quel est l’opérateur de concaténation en PHP ?',
-        options: ['+', '.', '&', '++'],
+        question: "Quel est l’opérateur de concaténation en PHP ?",
+        options: ["+", ".", "&", "++"],
         correctAnswer: 1,
-        explanation: "L'opérateur '.' est utilisé pour la concaténation de chaînes de caractères en PHP. Il permet de combiner plusieurs chaînes."
+        explanation:
+          "L'opérateur '.' est utilisé pour la concaténation de chaînes de caractères en PHP. Il permet de combiner plusieurs chaînes.",
       },
       {
         id: 13,
-        question: 'Comment appelle-t-on une fonction de manière récursive ?',
-        options: ['En appelant une autre fonction', 'En appelant elle-même', 'Impossible en PHP', 'Avec `loop()`'],
+        question: "Comment appelle-t-on une fonction de manière récursive ?",
+        options: [
+          "En appelant une autre fonction",
+          "En appelant elle-même",
+          "Impossible en PHP",
+          "Avec `loop()`",
+        ],
         correctAnswer: 1,
-        explanation: "En PHP, une fonction peut s'appeler elle-même, ce qui est appelé récursivité. C'est souvent utilisé pour résoudre des problèmes de récurrence."
+        explanation:
+          "En PHP, une fonction peut s'appeler elle-même, ce qui est appelé récursivité. C'est souvent utilisé pour résoudre des problèmes de récurrence.",
       },
       {
         id: 14,
-        question: 'Que signifie l’acronyme PHP ?',
-        options: ['Personal Home Page', 'PHP: Hypertext Preprocessor', 'Private Hosting Provider', 'Page Hosting PHP'],
+        question: "Que signifie l’acronyme PHP ?",
+        options: [
+          "Personal Home Page",
+          "PHP: Hypertext Preprocessor",
+          "Private Hosting Provider",
+          "Page Hosting PHP",
+        ],
         correctAnswer: 1,
-        explanation: "PHP: Hypertext Preprocessor est l'acronyme de PHP. C'est un langage de programmation côté serveur qui permet de générer du HTML dynamique."
+        explanation:
+          "PHP: Hypertext Preprocessor est l'acronyme récursif actuel de PHP. Initialement, PHP signifiait 'Personal Home Page'.",
       },
       {
         id: 15,
-        question: 'Quelle structure de contrôle n’existe pas en PHP ?',
-        options: ['if', 'match', 'foreach', 'switch'],
+        question: "Quelle structure de contrôle n’existe pas en PHP ?",
+        options: ["if", "match", "foreach", "switch"],
         correctAnswer: 1,
-        explanation: "La structure 'match' n'existe pas en PHP. Elle a été introduite en PHP 8.0. La structure 'switch' est utilisée à la place."
+        explanation:
+          "La structure 'match' a été introduite en PHP 8.0. Dans les versions antérieures, elle n'existait pas et on utilisait 'switch' à la place.",
       },
       {
         id: 16,
-        question: 'Quelle fonction sert à compter les éléments d’un tableau ?',
-        options: ['length()', 'count()', 'size()', 'sum()'],
+        question: "Quelle fonction sert à compter les éléments d’un tableau ?",
+        options: ["length()", "count()", "size()", "sum()"],
         correctAnswer: 1,
-        explanation: "La fonction 'count()' est utilisée pour compter le nombre d'éléments dans un tableau. Elle peut être utilisée avec 'sizeof()' qui est un alias."
+        explanation:
+          "La fonction 'count()' est utilisée pour compter le nombre d'éléments dans un tableau. Elle peut être utilisée avec 'sizeof()' qui est un alias.",
       },
       {
         id: 17,
-        question: 'Quel symbole est utilisé pour accéder à une propriété dans une classe ?',
-        options: ['.', '->', '::', '$'],
+        question:
+          "Quel symbole est utilisé pour accéder à une propriété dans une classe ?",
+        options: [".", "->", "::", "$"],
         correctAnswer: 1,
-        explanation: "Le symbole '->' est utilisé pour accéder aux propriétés et aux méthodes d'un objet en PHP. Il est suivi du nom de la propriété ou de la méthode."
+        explanation:
+          "Le symbole '->' est utilisé pour accéder aux propriétés et aux méthodes d'un objet en PHP. Il est suivi du nom de la propriété ou de la méthode.",
       },
       {
         id: 18,
-        question: 'Quel mot-clé permet d’hériter d’une classe ?',
-        options: ['include', 'extends', 'implements', 'inherits'],
+        question: "Quel mot-clé permet d’hériter d’une classe ?",
+        options: ["include", "extends", "implements", "inherits"],
         correctAnswer: 1,
-        explanation: "Le mot-clé 'extends' est utilisé pour hériter d'une classe en PHP. Il est suivi du nom de la classe parente."
+        explanation:
+          "Le mot-clé 'extends' est utilisé pour hériter d'une classe en PHP. Il est suivi du nom de la classe parente.",
       },
       {
         id: 19,
-        question: 'Quel est le rôle de `die()` ou `exit()` ?',
-        options: ['Arrêter le script', 'Afficher une erreur', 'Créer un fichier', 'Supprimer une variable'],
+        question: "Quel est le rôle de `die()` ou `exit()` ?",
+        options: [
+          "Arrêter le script",
+          "Afficher une erreur",
+          "Créer un fichier",
+          "Supprimer une variable",
+        ],
         correctAnswer: 0,
-        explanation: "Les fonctions 'die()' et 'exit()' sont utilisées pour arrêter l'exécution d'un script PHP. 'die()' est un alias de 'exit().'"
+        explanation:
+          "Les fonctions 'die()' et 'exit()' sont utilisées pour arrêter l'exécution d'un script PHP. 'die()' est un alias de 'exit().'",
       },
       {
         id: 20,
-        question: 'Quelle méthode supprime une session ?',
-        options: ['session_destroy()', 'session_delete()', 'unset()', 'remove_session()'],
+        question: "Quelle méthode supprime une session ?",
+        options: [
+          "session_destroy()",
+          "session_delete()",
+          "unset()",
+          "remove_session()",
+        ],
         correctAnswer: 0,
-        explanation: "La méthode 'session_destroy()' est utilisée pour détruire une session PHP. Elle supprime toutes les données de session associées à la session en cours."
+        explanation:
+          "La méthode 'session_destroy()' est utilisée pour détruire une session PHP. Elle supprime toutes les données de session associées à la session en cours.",
       },
       {
         id: 21,
-        question: 'Quelle fonction vérifie si un fichier existe ?',
-        options: ['exists()', 'file_exists()', 'check_file()', 'is_file()'],
+        question: "Quelle fonction vérifie si un fichier existe ?",
+        options: ["exists()", "file_exists()", "check_file()", "is_file()"],
         correctAnswer: 1,
-        explanation: "La fonction 'file_exists()' est utilisée pour vérifier si un fichier existe à un chemin spécifique. Elle retourne TRUE si le fichier existe, FALSE sinon."
+        explanation:
+          "La fonction 'file_exists()' est utilisée pour vérifier si un fichier existe à un chemin spécifique. Elle retourne TRUE si le fichier existe, FALSE sinon.",
       },
       {
         id: 22,
-        question: 'Quelle est la valeur de retour d’une fonction sans `return` ?',
-        options: ['0', 'null', 'true', 'undefined'],
+        question:
+          "Quelle est la valeur de retour d’une fonction sans `return` ?",
+        options: ["0", "null", "true", "undefined"],
         correctAnswer: 1,
-        explanation: "En PHP, si une fonction n'a pas de 'return', elle retourne 'null' par défaut. Cela signifie que la fonction n'a pas de valeur de retour explicite."
+        explanation:
+          "En PHP, si une fonction n'a pas de 'return', elle retourne 'null' par défaut. Cela signifie que la fonction n'a pas de valeur de retour explicite.",
       },
       {
         id: 23,
         question: 'Que retourne `strpos("bonjour", "jour")` ?',
-        options: ['false', '3', '4', '5'],
+        options: ["false", "3", "4", "5"],
         correctAnswer: 2,
-        explanation: `La fonction 'strpos()' retourne la position de la première occurrence d'une sous-chaîne dans une chaîne. Dans ce cas, 'strpos("bonjour", "jour")' retourne 4.`
+        explanation: `La fonction 'strpos()' retourne la position de la première occurrence d'une sous-chaîne dans une chaîne. Dans ce cas, 'strpos("bonjour", "jour")' retourne 4.`,
       },
       {
         id: 24,
-        question: 'PHP est-il sensible à la casse ?',
-        options: ['Oui', 'Non', 'Parfois', 'Uniquement pour les fonctions'],
+        question: "PHP est-il sensible à la casse ?",
+        options: ["Oui", "Non", "Parfois", "Uniquement pour les fonctions"],
         correctAnswer: 0,
-        explanation: "PHP est sensible à la casse. 'Bonjour' est différent de 'bonjour' et de 'BONJOUR'. Cela s'applique à toutes les variables, fonctions, classes, etc."
+        explanation:
+          "PHP est sensible à la casse. 'Bonjour' est différent de 'bonjour' et de 'BONJOUR'. Cela s'applique à toutes les variables, fonctions, classes, etc.",
       },
       {
         id: 25,
-        question: 'Quelle méthode permet d’envoyer un header HTTP ?',
-        options: ['http_send()', 'header()', 'redirect()', 'set_header()'],
+        question: "Quelle méthode permet d’envoyer un header HTTP ?",
+        options: ["http_send()", "header()", "redirect()", "set_header()"],
         correctAnswer: 1,
-        explanation: "La fonction 'header()' est utilisée pour envoyer des en-têtes HTTP au client. Elle peut être suivie de 'send()' pour envoyer le corps de la réponse."
-      }
-    ]
+        explanation:
+          "La fonction 'header()' est utilisée pour envoyer des en-têtes HTTP au client. Elle peut être suivie de 'send()' pour envoyer le corps de la réponse.",
+      },
+    ],
   },
   {
-    id: 'php-avance',
-    name: 'PHP - Avancé',
-    icon: '🧠',
-    description: 'Approfondissez vos connaissances PHP',
-    color: 'from-pink-500 to-red-600',
+    id: "php-avance",
+    name: "PHP - Avancé",
+    icon: "🧠",
+    description: "Approfondissez vos connaissances PHP",
+    color: "from-pink-500 to-red-600",
     questions: [
       {
         id: 26,
-        question: 'Quel mot-clé définit une interface ?',
-        options: ['interface', 'class', 'trait', 'abstract'],
+        question: "Quel mot-clé définit une interface ?",
+        options: ["interface", "class", "trait", "abstract"],
         correctAnswer: 0,
-        explanation: "Le mot-clé 'interface' est utilisé pour définir une interface en PHP. Une interface définit un contrat que les classes doivent suivre."
+        explanation:
+          "Le mot-clé 'interface' est utilisé pour définir une interface en PHP. Une interface définit un contrat que les classes doivent suivre.",
       },
       {
         id: 27,
-        question: 'Quelle est la portée d’une variable déclarée avec `static` ?',
-        options: ['Globale', 'Session', 'Locale mais persistante', 'Illimitée'],
+        question:
+          "Quelle est la portée d’une variable déclarée avec `static` ?",
+        options: ["Globale", "Session", "Locale mais persistante", "Illimitée"],
         correctAnswer: 2,
-        explanation: "Une variable déclarée avec 'static' est partagée entre toutes les instances d'une classe. Elle persiste pendant toute la durée de vie de l'application."
+        explanation:
+          "Une variable déclarée avec 'static' est partagée entre toutes les instances d'une classe. Elle persiste pendant toute la durée de vie de l'application.",
       },
       {
         id: 28,
-        question: 'Quelle fonction permet de sérialiser un tableau ?',
-        options: ['serialize()', 'toJSON()', 'pack()', 'array_flatten()'],
+        question: "Quelle fonction permet de sérialiser un tableau ?",
+        options: ["serialize()", "toJSON()", "pack()", "array_flatten()"],
         correctAnswer: 0,
-        explanation: "La fonction 'serialize()' est utilisée pour convertir un tableau PHP en une chaîne de caractères. Cela permet de stocker le tableau dans une variable ou une base de données."
+        explanation:
+          "La fonction 'serialize()' est utilisée pour convertir un tableau PHP en une chaîne de caractères. Cela permet de stocker le tableau dans une variable ou une base de données.",
       },
       {
         id: 29,
-        question: 'Que fait `json_encode()` ?',
-        options: ['Encode du HTML', 'Encode en Base64', 'Encode en JSON', 'Crypte la chaîne'],
+        question: "Que fait `json_encode()` ?",
+        options: [
+          "Encode du HTML",
+          "Encode en Base64",
+          "Encode en JSON",
+          "Crypte la chaîne",
+        ],
         correctAnswer: 2,
-        explanation: "La fonction 'json_encode()' est utilisée pour convertir un tableau PHP en une chaîne JSON. Elle est souvent utilisée pour renvoyer des données au format JSON."
+        explanation:
+          "La fonction 'json_encode()' est utilisée pour convertir un tableau PHP en une chaîne JSON. Elle est souvent utilisée pour renvoyer des données au format JSON.",
       },
       {
         id: 30,
-        question: 'Quelle classe permet de manipuler une base de données PDO ?',
-        options: ['PDO', 'MySQL', 'DB', 'Connector'],
+        question: "Quelle classe permet de manipuler une base de données PDO ?",
+        options: ["PDO", "MySQL", "DB", "Connector"],
         correctAnswer: 0,
-        explanation: "La classe 'PDO' est utilisée pour interagir avec les bases de données en PHP. Elle est plus sécurisée et plus flexible que les extensions MySQL natives."
+        explanation:
+          "La classe 'PDO' est utilisée pour interagir avec les bases de données en PHP. Elle est plus sécurisée et plus flexible que les extensions MySQL natives.",
       },
       {
         id: 31,
-        question: 'Quel mot-clé empêche l’héritage d’une classe ?',
-        options: ['static', 'final', 'private', 'sealed'],
+        question: "Quel mot-clé empêche l’héritage d’une classe ?",
+        options: ["static", "final", "private", "sealed"],
         correctAnswer: 1,
-        explanation: "Le mot-clé 'final' est utilisé pour empêcher l'héritage d'une classe. Une classe 'final' ne peut pas être étendue par d'autres classes."
+        explanation:
+          "Le mot-clé 'final' est utilisé pour empêcher l'héritage d'une classe. Une classe 'final' ne peut pas être étendue par d'autres classes.",
       },
       {
         id: 32,
-        question: 'Que signifie le mot-clé `abstract` ?',
-        options: ['Méthode accessible uniquement en privé', 'Classe ou méthode partiellement implémentée', 'Classe finale', 'Méthode statique'],
+        question: "Que signifie le mot-clé `abstract` ?",
+        options: [
+          "Méthode accessible uniquement en privé",
+          "Classe ou méthode partiellement implémentée",
+          "Classe finale",
+          "Méthode statique",
+        ],
         correctAnswer: 1,
-        explanation: "Le mot-clé 'abstract' est utilisé pour déclarer une méthode ou une classe qui n'a pas d'implémentation complète. Elle doit être implémentée par les classes qui l'héritent."
+        explanation:
+          "Le mot-clé 'abstract' est utilisé pour déclarer une méthode ou une classe qui n'a pas d'implémentation complète. Elle doit être implémentée par les classes qui l'héritent.",
       },
       {
         id: 33,
-        question: 'Quel mot-clé permet d’utiliser un trait ?',
-        options: ['include', 'trait', 'use', 'with'],
+        question: "Quel mot-clé permet d’utiliser un trait ?",
+        options: ["include", "trait", "use", "with"],
         correctAnswer: 2,
-        explanation: "Le mot-clé 'use' est utilisé pour utiliser un trait en PHP. Un trait est un ensemble de méthodes qui peuvent être réutilisées dans plusieurs classes."
+        explanation:
+          "Le mot-clé 'use' est utilisé pour utiliser un trait en PHP. Un trait est un ensemble de méthodes qui peuvent être réutilisées dans plusieurs classes.",
       },
       {
         id: 34,
-        question: 'Quelle méthode PDO exécute une requête préparée ?',
-        options: ['execute()', 'prepare()', 'query()', 'run()'],
+        question: "Quelle méthode PDO exécute une requête préparée ?",
+        options: ["execute()", "prepare()", "query()", "run()"],
         correctAnswer: 0,
-        explanation: "La méthode 'execute()' est utilisée pour exécuter une requête préparée PDO. Elle prend en argument les paramètres de la requête."
+        explanation:
+          "La méthode 'execute()' est utilisée pour exécuter une requête préparée PDO. Elle prend en argument les paramètres de la requête.",
       },
       {
         id: 35,
-        question: 'Comment attraper une exception en PHP ?',
-        options: ['try/catch', 'catch/throw', 'try/except', 'error_handler'],
+        question: "Comment attraper une exception en PHP ?",
+        options: ["try/catch", "catch/throw", "try/except", "error_handler"],
         correctAnswer: 0,
-        explanation: "La structure 'try/catch' est utilisée pour attraper les exceptions en PHP. Elle permet de gérer les erreurs qui peuvent survenir lors de l'exécution d'un script."
+        explanation:
+          "La structure 'try/catch' est utilisée pour attraper les exceptions en PHP. Elle permet de gérer les erreurs qui peuvent survenir lors de l'exécution d'un script.",
       },
       {
         id: 36,
-        question: 'Quelle fonction permet de charger automatiquement une classe ?',
-        options: ['autoload()', '__autoload()', 'load_class()', 'require()'],
+        question:
+          "Quelle fonction permet de charger automatiquement une classe ?",
+        options: ["autoload()", "__autoload()", "load_class()", "require()"],
         correctAnswer: 1,
-        explanation: "La fonction '__autoload()' est utilisée pour charger automatiquement les classes PHP. Elle est appelée lorsqu'une classe n'est pas trouvée."
+        explanation:
+          "La fonction '__autoload()' est utilisée pour charger automatiquement les classes PHP. Elle est appelée lorsqu'une classe n'est pas trouvée.",
       },
       {
         id: 37,
-        question: 'Que fait la méthode magique `__toString()` ?',
-        options: ['Retourne un objet', 'Convertit une chaîne', 'Définit la représentation texte d’un objet', 'Affiche une chaîne'],
+        question: "Que fait la méthode magique `__toString()` ?",
+        options: [
+          "Retourne un objet",
+          "Convertit une chaîne",
+          "Définit la représentation texte d’un objet",
+          "Affiche une chaîne",
+        ],
         correctAnswer: 2,
-        explanation: "La méthode magique '__toString()' est appelée lorsqu'on essaie d'afficher un objet en PHP. Elle doit retourner une chaîne de caractères."
+        explanation:
+          "La méthode magique '__toString()' est appelée lorsqu'on essaie d'afficher un objet en PHP. Elle doit retourner une chaîne de caractères.",
       },
       {
         id: 38,
-        question: 'Quel est le mot-clé pour définir une constante de classe ?',
-        options: ['let', 'const', 'define', 'static'],
+        question: "Quel est le mot-clé pour définir une constante de classe ?",
+        options: ["let", "const", "define", "static"],
         correctAnswer: 1,
-        explanation: "Le mot-clé 'const' est utilisé pour définir une constante de classe. Elle est similaire à 'define' mais est définie au niveau de la classe."
+        explanation:
+          "Le mot-clé 'const' est utilisé pour définir une constante de classe. Elle est similaire à 'define' mais est définie au niveau de la classe.",
       },
       {
         id: 39,
-        question: 'Quelle est la portée d’une propriété `protected` ?',
-        options: ['Classe seulement', 'Classe et enfants', 'Partout', 'Fichier actuel uniquement'],
+        question: "Quelle est la portée d’une propriété `protected` ?",
+        options: [
+          "Classe seulement",
+          "Classe et enfants",
+          "Partout",
+          "Fichier actuel uniquement",
+        ],
         correctAnswer: 1,
-        explanation: "Une propriété déclarée avec 'protected' est accessible depuis la classe elle-même, ainsi que depuis les classes qui l'héritent."
+        explanation:
+          "Une propriété déclarée avec 'protected' est accessible depuis la classe elle-même, ainsi que depuis les classes qui l'héritent.",
       },
       {
         id: 40,
-        question: 'Que signifie le mot-clé `namespace` ?',
-        options: ['Déclare un dossier', 'Évite les conflits de noms', 'Importe un fichier', 'Crée une base de données'],
+        question: "Que signifie le mot-clé `namespace` ?",
+        options: [
+          "Déclare un dossier",
+          "Évite les conflits de noms",
+          "Importe un fichier",
+          "Crée une base de données",
+        ],
         correctAnswer: 1,
-        explanation: "Le mot-clé 'namespace' est utilisé pour éviter les conflits de noms de classes, fonctions, interfaces, etc. Il permet de créer des espaces de noms."
+        explanation:
+          "Le mot-clé 'namespace' est utilisé pour éviter les conflits de noms de classes, fonctions, interfaces, etc. Il permet de créer des espaces de noms.",
       },
       {
         id: 41,
-        question: 'Comment déclare-t-on un tableau associatif ?',
-        options: ['array(0,1,2)', '[]', '["cle" => "valeur"]', '{cle: valeur}'],
+        question: "Comment déclare-t-on un tableau associatif ?",
+        options: ["array(0,1,2)", "[]", '["cle" => "valeur"]', "{cle: valeur}"],
         correctAnswer: 2,
-        explanation: `Un tableau associatif en PHP est défini avec des clés et des valeurs. La syntaxe '["cle" => "valeur"]' est la plus courante.`
+        explanation: `Un tableau associatif en PHP est défini avec des clés et des valeurs. La syntaxe '["cle" => "valeur"]' est la plus courante.`,
       },
       {
         id: 42,
-        question: 'Quelle méthode récupère toutes les lignes d’un résultat PDO ?',
-        options: ['fetchAll()', 'getRows()', 'queryAll()', 'selectAll()'],
+        question:
+          "Quelle méthode récupère toutes les lignes d’un résultat PDO ?",
+        options: ["fetchAll()", "getRows()", "queryAll()", "selectAll()"],
         correctAnswer: 0,
-        explanation: "La méthode 'fetchAll()' est utilisée pour récupérer toutes les lignes d'un résultat PDO. Elle retourne un tableau de résultats."
+        explanation:
+          "La méthode 'fetchAll()' est utilisée pour récupérer toutes les lignes d'un résultat PDO. Elle retourne un tableau de résultats.",
       },
       {
         id: 43,
-        question: 'Quelle fonction permet de supprimer les balises HTML ?',
-        options: ['remove_tags()', 'html_strip()', 'strip_tags()', 'clear_html()'],
+        question: "Quelle fonction permet de supprimer les balises HTML ?",
+        options: [
+          "remove_tags()",
+          "html_strip()",
+          "strip_tags()",
+          "clear_html()",
+        ],
         correctAnswer: 2,
-        explanation: "La fonction 'strip_tags()' est utilisée pour supprimer les balises HTML d'une chaîne. Elle prend en argument la chaîne et une liste facultative de balises à conserver."
+        explanation:
+          "La fonction 'strip_tags()' est utilisée pour supprimer les balises HTML d'une chaîne. Elle prend en argument la chaîne et une liste facultative de balises à conserver.",
       },
       {
         id: 44,
         question: 'Quel opérateur PHP est le "null coalescing" ?',
-        options: ['??', '?:', '&&', '=>'],
+        options: ["??", "?:", "&&", "=>"],
         correctAnswer: 0,
-        explanation: "L'opérateur '??' (null coalescing) est utilisé pour retourner la première valeur non nulle d'une liste. Si toutes les valeurs sont nulles, il retourne la dernière."
+        explanation:
+          "L'opérateur '??' (null coalescing) est utilisé pour retourner la première valeur non nulle d'une liste. Si toutes les valeurs sont nulles, il retourne la dernière.",
       },
       {
         id: 45,
-        question: 'Quelle extension est souvent utilisée avec Composer ?',
-        options: ['vendor/', 'package.json', 'node_modules/', 'config/'],
+        question: "Quelle extension est souvent utilisée avec Composer ?",
+        options: ["vendor/", "package.json", "node_modules/", "config/"],
         correctAnswer: 0,
-        explanation: "L'extension 'vendor/' est souvent utilisée avec Composer pour stocker les dépendances d'un projet. Elle contient les paquets installés."
+        explanation:
+          "L'extension 'vendor/' est souvent utilisée avec Composer pour stocker les dépendances d'un projet. Elle contient les paquets installés.",
       },
       {
         id: 46,
-        question: 'Quelle commande initialise un projet avec Composer ?',
-        options: ['composer create', 'composer start', 'composer init', 'composer build'],
+        question: "Quelle commande initialise un projet avec Composer ?",
+        options: [
+          "composer create",
+          "composer start",
+          "composer init",
+          "composer build",
+        ],
         correctAnswer: 2,
-        explanation: "La commande 'composer init' est utilisée pour initialiser un nouveau projet PHP avec Composer. Elle crée un fichier 'composer.json' et installe les dépendances."
+        explanation:
+          "La commande 'composer init' est utilisée pour initialiser un nouveau projet PHP avec Composer. Elle crée un fichier 'composer.json' et installe les dépendances.",
       },
       {
         id: 47,
-        question: 'Quelle structure est correcte pour une boucle while ?',
-        options: ['while (i < 10) { ... }', 'while i < 10 { ... }', 'loop (i < 10) { ... }', 'repeat while(i < 10) { ... }'],
+        question: "Quelle structure est correcte pour une boucle while ?",
+        options: [
+          "while (i < 10) { ... }",
+          "while i < 10 { ... }",
+          "loop (i < 10) { ... }",
+          "repeat while(i < 10) { ... }",
+        ],
         correctAnswer: 0,
-        explanation: "La structure 'while' est utilisée pour exécuter un bloc de code tant qu'une condition est vraie. Elle est souvent utilisée pour parcourir des collections ou attendre des événements."
+        explanation:
+          "La structure 'while' est utilisée pour exécuter un bloc de code tant qu'une condition est vraie. Elle est souvent utilisée pour parcourir des collections ou attendre des événements.",
       },
       {
         id: 48,
-        question: 'Que fait `array_merge()` ?',
-        options: ['Supprime les doublons', 'Fusionne deux tableaux', 'Trie un tableau', 'Inverse un tableau'],
+        question: "Que fait `array_merge()` ?",
+        options: [
+          "Supprime les doublons",
+          "Fusionne deux tableaux",
+          "Trie un tableau",
+          "Inverse un tableau",
+        ],
         correctAnswer: 1,
-        explanation: "La fonction 'array_merge()' est utilisée pour fusionner deux tableaux PHP. Elle prend en argument les tableaux à fusionner et retourne un nouveau tableau."
+        explanation:
+          "La fonction 'array_merge()' est utilisée pour fusionner deux tableaux PHP. Elle prend en argument les tableaux à fusionner et retourne un nouveau tableau.",
       },
       {
         id: 49,
-        question: 'Quel est le rôle de Composer ?',
-        options: ['Compiler du code', 'Gérer les dépendances PHP', 'Créer des interfaces', 'Créer des APIs'],
+        question: "Quel est le rôle de Composer ?",
+        options: [
+          "Compiler du code",
+          "Gérer les dépendances PHP",
+          "Créer des interfaces",
+          "Créer des APIs",
+        ],
         correctAnswer: 1,
-        explanation: "Composer est un gestionnaire de dépendances PHP. Il permet d'installer, de gérer et de désinstaller les dépendances d'un projet."
+        explanation:
+          "Composer est un gestionnaire de dépendances PHP. Il permet d'installer, de gérer et de désinstaller les dépendances d'un projet.",
       },
       {
         id: 50,
-        question: 'Comment accéder à une propriété statique d’une classe ?',
-        options: ['self::$prop', 'this->prop', 'class->prop', '$this::$prop'],
+        question: "Comment accéder à une propriété statique d’une classe ?",
+        options: ["self::$prop", "this->prop", "class->prop", "$this::$prop"],
         correctAnswer: 0,
-        explanation: "La syntaxe 'self::$prop' est utilisée pour accéder à une propriété statique d'une classe. Elle est similaire à 'this->prop' mais est utilisée pour les propriétés statiques."
-      }
-    ]
+        explanation:
+          "La syntaxe 'self::$prop' est utilisée pour accéder à une propriété statique d'une classe. Elle est similaire à 'this->prop' mais est utilisée pour les propriétés statiques.",
+      },
+    ],
   },
   {
-  id: 'php2',
-  name: 'PHP - Partie 2',
-  icon: '🧠',
-  description: 'Poursuivez votre révision avancée de PHP',
-  color: 'from-indigo-500 to-blue-600',
-  questions: [
-    {
-      id: 51,
-      question: 'Quelle est la valeur par défaut de `$_GET` ?',
-      options: ['null', 'array vide', 'false', 'undefined'],
-      correctAnswer: 1,
-      explanation: "La superglobale '$_GET' est un tableau associatif qui contient les données envoyées via l'URL avec la méthode GET. Sa valeur par défaut est un tableau vide."
-    },
-    {
-      id: 52,
-      question: 'Quel est le rôle de `session_start()` ?',
-      options: [
-        'Détruire une session',
-        'Initialiser ou reprendre une session',
-        'Vider les variables de session',
-        'Créer un cookie'
-      ],
-      correctAnswer: 1,
-      explanation: "La fonction 'session_start()' est utilisée pour démarrer une session PHP. Elle doit être appelée au début de chaque script qui utilise les variables de session."
-    },
-    {
-      id: 53,
-      question: 'Quelle est la méthode HTTP par défaut utilisée par un formulaire HTML ?',
-      options: ['GET', 'POST', 'PUT', 'DELETE'],
-      correctAnswer: 0,
-      explanation: "La méthode HTTP par défaut pour un formulaire HTML est 'GET'. Elle envoie les données du formulaire dans l'URL avec la méthode GET."
-    },
-    {
-      id: 54,
-      question: 'Quelle superglobale contient les fichiers envoyés via un formulaire ?',
-      options: ['$_POST', '$_FILES', '$_REQUEST', '$_UPLOAD'],
-      correctAnswer: 1,
-      explanation: "La superglobale '$_FILES' est utilisée pour accéder aux fichiers envoyés via un formulaire HTML avec la méthode POST."
-    },
-    {
-      id: 55,
-      question: 'Que retourne `empty([])` en PHP ?',
-      options: ['true', 'false', 'null', 'error'],
-      correctAnswer: 0,
-      explanation: "La fonction 'empty()' retourne TRUE si la variable est vide ou n'existe pas. Dans ce cas, '[]' est un tableau vide, donc 'empty([])' retourne TRUE."
-    },
-    {
-      id: 56,
-      question: 'Quelle fonction permet de supprimer un élément dans un tableau ?',
-      options: ['remove()', 'delete()', 'unset()', 'clear()'],
-      correctAnswer: 2,
-      explanation: "La fonction 'unset()' est utilisée pour supprimer une variable. Dans le cas d'un tableau, elle supprime l'élément à l'index spécifié."
-    },
-    {
-      id: 57,
-      question: 'Quelle est la différence entre `==` et `===` en PHP ?',
-      options: [
-        'Aucune différence',
-        '=== vérifie uniquement la valeur',
-        '=== vérifie valeur et type',
-        '== vérifie valeur et type'
-      ],
-      correctAnswer: 2,
-      explanation: "L'opérateur '===' (strictement égal) vérifie à la fois la valeur et le type de la variable. L'opérateur '==' (égal) vérifie uniquement la valeur."
-    },
-    {
-      id: 58,
-      question: 'Que fait la fonction `explode()` ?',
-      options: [
-        'Crée une chaîne à partir d’un tableau',
-        'Divise une chaîne en un tableau',
-        'Supprime des caractères',
-        'Fusionne deux chaînes'
-      ],
-      correctAnswer: 1,
-      explanation: "La fonction 'explode()' divise une chaîne de caractères en un tableau, en utilisant un délimiteur. Elle prend en argument la chaîne et le délimiteur."
-    },
-    {
-      id: 59,
-      question: 'Quelle est la portée d’une variable déclarée avec `global` ?',
-      options: ['Locale', 'Globale', 'Superglobale', 'Statique'],
-      correctAnswer: 1,
-      explanation: "Une variable déclarée avec 'global' est accessible depuis n'importe quel endroit du script. Elle est déclarée avec 'global $variable;'."
-    },
-    {
-      id: 60,
-      question: 'Que retourne la fonction `isset()` si la variable n’existe pas ?',
-      options: ['false', 'true', 'null', 'error'],
-      correctAnswer: 0,
-      explanation: "La fonction 'isset()' retourne FALSE si la variable n'existe pas ou si elle est NULL. Elle retourne TRUE si la variable existe et n'est pas NULL."
-    },
-    {
-      id: 61,
-      question: 'Quelle est la structure correcte d’une classe en PHP ?',
-      options: [
-        'def MaClasse { }',
-        'function MaClasse() { }',
-        'class MaClasse { }',
-        'new MaClasse() { }'
-      ],
-      correctAnswer: 2,
-      explanation: "La structure 'class' est utilisée pour définir une classe en PHP. Elle est suivie du nom de la classe et des accolades."
-    },
-    {
-      id: 62,
-      question: 'Quelle est la visibilité par défaut d’une méthode dans une classe ?',
-      options: ['private', 'protected', 'public', 'static'],
-      correctAnswer: 2,
-      explanation: "Une méthode déclarée sans mot-clé de visibilité est 'public' par défaut. Elle est accessible depuis n'importe quel endroit."
-    },
-    {
-      id: 63,
-      question: 'Comment hérite-t-on d’une classe en PHP ?',
-      options: ['class Fille extend Mère', 'class Fille implements Mère', 'class Fille inherits Mère', 'class Fille extends Mère'],
-      correctAnswer: 3,
-      explanation: "La syntaxe 'extends' est utilisée pour hériter d'une classe en PHP. Elle est suivie du nom de la classe parente."
-    },
-    {
-      id: 64,
-      question: 'Quel mot-clé permet de définir une constante dans une classe ?',
-      options: ['define', 'static', 'const', 'final'],
-      correctAnswer: 2,
-      explanation: "Le mot-clé 'const' est utilisé pour définir une constante de classe. Elle est similaire à 'define' mais est définie au niveau de la classe."
-    },
-    {
-      id: 65,
-      question: 'Que fait `json_encode()` ?',
-      options: ['Décode une chaîne JSON', 'Encode un tableau en JSON', 'Crée un cookie', 'Génère un fichier'],
-      correctAnswer: 1,
-      explanation: "La fonction 'json_encode()' est utilisée pour convertir un tableau PHP en une chaîne JSON. Elle est souvent utilisée pour renvoyer des données au format JSON."
-    },
-    {
-      id: 66,
-      question: 'Quel mot-clé permet d’empêcher l’héritage d’une classe ?',
-      options: ['private', 'protected', 'final', 'sealed'],
-      correctAnswer: 2,
-      explanation: "Le mot-clé 'final' est utilisé pour empêcher l'héritage d'une classe. Une classe 'final' ne peut pas être étendue par d'autres classes."
-    },
-    {
-      id: 67,
-      question: 'Quelle fonction est utilisée pour vérifier si une classe existe ?',
-      options: ['is_class()', 'class_exists()', 'check_class()', 'defined_class()'],
-      correctAnswer: 1,
-      explanation: "La fonction 'class_exists()' est utilisée pour vérifier si une classe existe. Elle prend en argument le nom de la classe."
-    },
-    {
-      id: 68,
-      question: 'Quel est le rôle de `PDO::prepare()` ?',
-      options: [
-        'Exécuter une requête SQL',
-        'Préparer une requête paramétrée',
-        'Connecter à une base',
-        'Créer une table'
-      ],
-      correctAnswer: 1,
-      explanation: "La méthode 'prepare()' est utilisée pour préparer une requête SQL avec des paramètres. Elle retourne un objet PDOStatement."
-    },
-    {
-      id: 69,
-      question: 'Que fait `password_hash()` ?',
-      options: [
-        'Crypte une image',
-        'Génère un mot de passe aléatoire',
-        'Hash un mot de passe de manière sécurisée',
-        'Vérifie un mot de passe'
-      ],
-      correctAnswer: 2,
-      explanation: "La fonction 'password_hash()' est utilisée pour crypter un mot de passe de manière sécurisée. Elle prend en argument le mot de passe et le type de hachage."
-    },
-    {
-      id: 70,
-      question: 'Quelle est l’utilité de `filter_var()` ?',
-      options: ['Nettoyer une chaîne', 'Valider ou filtrer une variable', 'Crypter une donnée', 'Formater une date'],
-      correctAnswer: 1,
-      explanation: "La fonction 'filter_var()' est utilisée pour valider ou filtrer une variable. Elle prend en argument la variable et le filtre à appliquer."
-    },
-    {
-      id: 71,
-      question: 'Que retourne `array_merge([1, 2], [3, 4])` ?',
-      options: ['[1, 2]', '[3, 4]', '[1, 2, 3, 4]', 'Erreur'],
-      correctAnswer: 2,
-      explanation: "La fonction 'array_merge()' fusionne deux tableaux PHP. Elle prend en argument les tableaux à fusionner et retourne un nouveau tableau."
-    },
-    {
-      id: 72,
-      question: 'Quel est le rôle de `mysqli_connect()` ?',
-      options: ['Exécuter une requête', 'Se connecter à une base MySQL', 'Créer un utilisateur', 'Créer une base de données'],
-      correctAnswer: 1,
-      explanation: "La fonction 'mysqli_connect()' est utilisée pour établir une connexion à une base de données MySQL. Elle prend en argument les paramètres de connexion."
-    },
-    {
-      id: 73,
-      question: 'Quel est le résultat de `count(["a", "b", "c"])` ?',
-      options: ['2', '3', '4', '1'],
-      correctAnswer: 1,
-      explanation: "La fonction 'count()' est utilisée pour compter le nombre d'éléments dans un tableau. Elle peut être utilisée avec 'sizeof()' qui est un alias."
-    },
-    {
-      id: 74,
-      question: 'Que permet `foreach` ?',
-      options: ['Exécuter une fonction', 'Afficher une variable', 'Parcourir un tableau', 'Créer une boucle infinie'],
-      correctAnswer: 2,
-      explanation: "La boucle 'foreach' est utilisée pour parcourir les éléments d'un tableau. Elle est souvent utilisée pour itérer sur les éléments d'un tableau."
-    },
-    {
-      id: 75,
-      question: 'Comment accéder à une variable de session ?',
-      options: ['$_SESSION["nom"]', 'session["nom"]', 'get_session("nom")', '$_SESS["nom"]'],
-      correctAnswer: 0,
-      explanation: "La superglobale '$_SESSION' est utilisée pour accéder aux variables de session PHP. Elle est un tableau associatif qui stocke les données de session."
-    },
-    {
-      id: 76,
-      question: 'Quelle est la bonne extension de fichier pour un script PHP ?',
-      options: ['.ph', '.php', '.phtml', '.script'],
-      correctAnswer: 1,
-      explanation: "L'extension .php est la plus courante pour les fichiers PHP. Elle indique au serveur que le fichier doit être interprété comme du PHP."
-    },
-    {
-      id: 77,
-      question: 'Quel est le mot-clé pour définir une méthode statique ?',
-      options: ['static', 'const', 'this', 'private'],
-      correctAnswer: 0,
-      explanation: "Le mot-clé 'static' est utilisé pour définir une méthode statique. Une méthode statique peut être appelée sans instancier la classe."
-    },
-    {
-      id: 78,
-      question: 'Que fait `require_once` ?',
-      options: ['Inclut un fichier chaque fois', 'Inclut un fichier une seule fois', 'Exécute un script', 'Crée une variable'],
-      correctAnswer: 1,
-      explanation: "La fonction 'require_once()' est utilisée pour inclure un fichier PHP une seule fois. Elle empêche la redéfinition de la fonction si le fichier est déjà inclus."
-    },
-    {
-      id: 79,
-      question: 'Quelle fonction permet de lire une ligne dans un fichier ?',
-      options: ['read()', 'fgets()', 'file_get()', 'scan()'],
-      correctAnswer: 1,
-      explanation: "La fonction 'fgets()' est utilisée pour lire une ligne à la fois d'un fichier. Elle prend en argument le chemin du fichier et retourne la ligne lue."
-    },
-    {
-      id: 80,
-      question: 'Quelle fonction supprime un fichier ?',
-      options: ['file_delete()', 'unlink()', 'remove()', 'delete_file()'],
-      correctAnswer: 1,
-      explanation: "La fonction 'unlink()' est utilisée pour supprimer un fichier. Elle prend en argument le chemin du fichier à supprimer."
-    },
-    {
-      id: 81,
-      question: 'Comment s’écrit un commentaire sur une seule ligne ?',
-      options: ['# commentaire', '// commentaire', '/* commentaire */', 'Les deux premiers'],
-      correctAnswer: 3,
-      explanation: "La syntaxe '//' est utilisée pour écrire un commentaire sur une seule ligne en PHP. Elle commence par '//' et continue jusqu'à la fin de la ligne."
-    },
-    {
-      id: 82,
-      question: 'Comment se nomme l’opérateur de résolution de portée ?',
-      options: ['->', '::', '.', '#'],
-      correctAnswer: 1,
-      explanation: "L'opérateur '::' est utilisé pour accéder aux propriétés et aux méthodes statiques d'une classe. Il est suivi du nom de la propriété ou de la méthode."
-    },
-    {
-      id: 83,
-      question: 'Que signifie `OOP` en PHP ?',
-      options: ['Option Overwriting Protocol', 'Object-Oriented Programming', 'Open Object Process', 'Object Operational Path'],
-      correctAnswer: 1,
-      explanation: "OOP signifie Programmation Orientée Objet. C'est un paradigme de programmation qui utilise des objets et des classes pour organiser le code."
-    },
-    {
-      id: 84,
-      question: 'Quelle méthode permet de désérialiser une chaîne ?',
-      options: ['unserialize()', 'decode()', 'json_decode()', 'extract()'],
-      correctAnswer: 0,
-      explanation: "La fonction 'unserialize()' est utilisée pour convertir une chaîne JSON en un tableau PHP. Elle prend en argument la chaîne JSON."
-    },
-    {
-      id: 85,
-      question: 'Comment afficher "Bonjour" avec PHP ?',
-      options: ['echo("Bonjour");', 'print("Bonjour");', 'printf("Bonjour");', 'Toutes ces réponses'],
-      correctAnswer: 3,
-      explanation: "Les trois fonctions 'echo()', 'print()' et 'printf()' sont utilisées pour afficher du texte à l'écran en PHP. 'printf()' est souvent utilisé pour formater le texte."
-    },
-    {
-      id: 86,
-      question: 'Quelle fonction retourne l’heure actuelle ?',
-      options: ['time()', 'now()', 'getTime()', 'date_now()'],
-      correctAnswer: 0,
-      explanation: "La fonction 'time()' est utilisée pour obtenir l'heure actuelle en secondes depuis le 1er janvier 1970. Elle peut être utilisée avec 'date()' pour formater l'heure."
-    },
-    {
-      id: 87,
-      question: 'Quel est le rôle de `header()` ?',
-      options: ['Modifier l’en-tête HTTP', 'Afficher une page', 'Rediriger ou modifier HTTP', 'Créer une variable'],
-      correctAnswer: 2,
-      explanation: "La fonction 'header()' est utilisée pour envoyer des en-têtes HTTP au client. Elle peut être suivie de 'send()' pour envoyer le corps de la réponse."
-    },
-    {
-      id: 88,
-      question: 'Que fait `ob_start()` ?',
-      options: ['Ouvre un fichier', 'Démarre la sortie tampon', 'Démarre une session', 'Efface un tampon'],
-      correctAnswer: 1,
-      explanation: "La fonction 'ob_start()' est utilisée pour démarrer la sortie tampon en PHP. Elle permet de capturer la sortie HTML avant qu'elle ne soit envoyée au client."
-    },
-    {
-      id: 89,
-      question: 'Quelle extension permet l’utilisation de PDO avec MySQL ?',
-      options: ['pdo_mysql', 'pdo_pgsql', 'mysqli', 'pdo_sqlite'],
-      correctAnswer: 0,
-      explanation: "L'extension 'pdo_mysql' est utilisée pour interagir avec une base de données MySQL via PDO. Elle permet de créer des connexions, exécuter des requêtes, etc."
-    },
-    {
-      id: 90,
-      question: 'Quel est le rôle de `__construct()` ?',
-      options: ['Méthode de destruction', 'Méthode d’initialisation', 'Méthode magique d’appel', 'Méthode finale'],
-      correctAnswer: 1,
-      explanation: "La méthode magique '__construct()' est appelée lorsqu'une nouvelle instance d'une classe est créée. Elle est souvent utilisée pour initialiser les propriétés de l'objet."
-    },
-    {
-      id: 91,
-      question: 'Que signifie `CLI` ?',
-      options: ['Command Line Interface', 'Central Logic Interface', 'Command Logic Interpreter', 'Common Library Integration'],
-      correctAnswer: 0,
-      explanation: "CLI signifie Interface de Ligne de Commande. Elle permet d'exécuter des scripts PHP depuis la ligne de commande."
-    },
-    {
-      id: 92,
-      question: 'Comment vérifier si un fichier existe ?',
-      options: ['exists()', 'file_exists()', 'check_file()', 'is_file()'],
-      correctAnswer: 1,
-      explanation: "La fonction 'file_exists()' est utilisée pour vérifier si un fichier existe à un chemin spécifique. Elle retourne TRUE si le fichier existe, FALSE sinon."
-    },
-    {
-      id: 93,
-      question: 'Quel mot-clé permet d’utiliser un espace de noms ?',
-      options: ['use', 'include', 'require', 'namespace'],
-      correctAnswer: 0,
-      explanation: "Le mot-clé 'use' est utilisé pour utiliser un espace de noms en PHP. Il est suivi du nom de l'espace de noms."
-    },
-    {
-      id: 94,
-      question: 'Quel mot-clé permet de définir un trait ?',
-      options: ['class', 'trait', 'extends', 'implements'],
-      correctAnswer: 1,
-      explanation: "Le mot-clé 'trait' est utilisé pour définir un trait en PHP. Un trait est un ensemble de méthodes qui peuvent être réutilisées dans plusieurs classes."
-    },
-    {
-      id: 95,
-      question: 'Quelle méthode est appelée lors de la destruction d’un objet ?',
-      options: ['__destroy()', '__destruct()', 'destroy()', 'destruct()'],
-      correctAnswer: 1,
-      explanation: "La méthode magique '__destruct()' est appelée lorsqu'un objet PHP est détruit. Elle est souvent utilisée pour libérer des ressources."
-    },
-    {
-      id: 96,
-      question: 'Quel opérateur permet la concaténation en PHP ?',
-      options: ['+', '.', '&', '::'],
-      correctAnswer: 1,
-      explanation: "L'opérateur '.' est utilisé pour la concaténation de chaînes de caractères en PHP. Il permet de combiner plusieurs chaînes."
-    },
-    {
-      id: 97,
-      question: 'Quelle est la sortie de `var_dump(null)` ?',
-      options: ['bool(false)', 'NULL', '0', 'undefined'],
-      correctAnswer: 1,
-      explanation: "La fonction 'var_dump()' est utilisée pour afficher des informations détaillées sur une variable, y compris son type et sa valeur. Dans ce cas, 'var_dump(null)' affiche 'NULL'."
-    },
-    {
-      id: 98,
-      question: 'Que fait `strtolower()` ?',
-      options: ['Convertit en majuscules', 'Convertit en minuscules', 'Compresse la chaîne', 'Transforme en tableau'],
-      correctAnswer: 1,
-      explanation: "La fonction 'strtolower()' est utilisée pour convertir une chaîne de caractères en minuscules. Elle prend en argument la chaîne à convertir."
-    },
-    {
-      id: 99,
-      question: 'Quelle fonction permet de lire tous les fichiers d’un dossier ?',
-      options: ['read_dir()', 'scandir()', 'listdir()', 'dir_list()'],
-      correctAnswer: 1,
-      explanation: "La fonction 'scandir()' est utilisée pour lire le contenu d'un dossier. Elle prend en argument le chemin du dossier et retourne un tableau des fichiers et dossiers."
-    },
-    {
-      id: 100,
-      question: 'Quelle est la sortie de `true && false` ?',
-      options: ['true', 'false', '1', '0'],
-      correctAnswer: 1,
-      explanation: "L'opérateur '&&' (ET logique) retourne FALSE si l'une des deux valeurs est FALSE. Dans ce cas, 'true && false' retourne FALSE."
-    }
-  ]
-}
-
-
+    id: "php2",
+    name: "PHP - Partie 2",
+    icon: "🧠",
+    description: "Poursuivez votre révision avancée de PHP",
+    color: "from-indigo-500 to-blue-600",
+    questions: [
+      {
+        id: 51,
+        question: "Quelle est la valeur par défaut de `$_GET` ?",
+        options: ["null", "array vide", "false", "undefined"],
+        correctAnswer: 1,
+        explanation:
+          "La superglobale '$_GET' est un tableau associatif qui contient les données envoyées via l'URL avec la méthode GET. Sa valeur par défaut est un tableau vide.",
+      },
+      {
+        id: 52,
+        question: "Quel est le rôle de `session_start()` ?",
+        options: [
+          "Détruire une session",
+          "Initialiser ou reprendre une session",
+          "Vider les variables de session",
+          "Créer un cookie",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'session_start()' est utilisée pour démarrer une session PHP. Elle doit être appelée au début de chaque script qui utilise les variables de session.",
+      },
+      {
+        id: 53,
+        question:
+          "Quelle est la méthode HTTP par défaut utilisée par un formulaire HTML ?",
+        options: ["GET", "POST", "PUT", "DELETE"],
+        correctAnswer: 0,
+        explanation:
+          "La méthode HTTP par défaut pour un formulaire HTML est 'GET'. Elle envoie les données du formulaire dans l'URL avec la méthode GET.",
+      },
+      {
+        id: 54,
+        question:
+          "Quelle superglobale contient les fichiers envoyés via un formulaire ?",
+        options: ["$_POST", "$_FILES", "$_REQUEST", "$_UPLOAD"],
+        correctAnswer: 1,
+        explanation:
+          "La superglobale '$_FILES' est utilisée pour accéder aux fichiers envoyés via un formulaire HTML avec la méthode POST.",
+      },
+      {
+        id: 55,
+        question: "Que retourne `empty([])` en PHP ?",
+        options: ["true", "false", "null", "error"],
+        correctAnswer: 0,
+        explanation:
+          "La fonction 'empty()' retourne TRUE si la variable est vide ou n'existe pas. Dans ce cas, '[]' est un tableau vide, donc 'empty([])' retourne TRUE.",
+      },
+      {
+        id: 56,
+        question:
+          "Quelle fonction permet de supprimer un élément dans un tableau ?",
+        options: ["remove()", "delete()", "unset()", "clear()"],
+        correctAnswer: 2,
+        explanation:
+          "La fonction 'unset()' est utilisée pour supprimer une variable. Dans le cas d'un tableau, elle supprime l'élément à l'index spécifié.",
+      },
+      {
+        id: 57,
+        question: "Quelle est la différence entre `==` et `===` en PHP ?",
+        options: [
+          "Aucune différence",
+          "=== vérifie uniquement la valeur",
+          "=== vérifie valeur et type",
+          "== vérifie valeur et type",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "L'opérateur '===' (strictement égal) vérifie à la fois la valeur et le type de la variable. L'opérateur '==' (égal) vérifie uniquement la valeur.",
+      },
+      {
+        id: 58,
+        question: "Que fait la fonction `explode()` ?",
+        options: [
+          "Crée une chaîne à partir d’un tableau",
+          "Divise une chaîne en un tableau",
+          "Supprime des caractères",
+          "Fusionne deux chaînes",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'explode()' divise une chaîne de caractères en un tableau, en utilisant un délimiteur. Elle prend en argument la chaîne et le délimiteur.",
+      },
+      {
+        id: 59,
+        question:
+          "Quelle est la portée d’une variable déclarée avec `global` ?",
+        options: ["Locale", "Globale", "Superglobale", "Statique"],
+        correctAnswer: 1,
+        explanation:
+          "Une variable déclarée avec 'global' est accessible depuis n'importe quel endroit du script. Elle est déclarée avec 'global $variable;'.",
+      },
+      {
+        id: 60,
+        question:
+          "Que retourne la fonction `isset()` si la variable n’existe pas ?",
+        options: ["false", "true", "null", "error"],
+        correctAnswer: 0,
+        explanation:
+          "La fonction 'isset()' retourne FALSE si la variable n'existe pas ou si elle est NULL. Elle retourne TRUE si la variable existe et n'est pas NULL.",
+      },
+      {
+        id: 61,
+        question: "Quelle est la structure correcte d’une classe en PHP ?",
+        options: [
+          "def MaClasse { }",
+          "function MaClasse() { }",
+          "class MaClasse { }",
+          "new MaClasse() { }",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "La structure 'class' est utilisée pour définir une classe en PHP. Elle est suivie du nom de la classe et des accolades.",
+      },
+      {
+        id: 62,
+        question:
+          "Quelle est la visibilité par défaut d’une méthode dans une classe ?",
+        options: ["private", "protected", "public", "static"],
+        correctAnswer: 2,
+        explanation:
+          "Une méthode déclarée sans mot-clé de visibilité est 'public' par défaut. Elle est accessible depuis n'importe quel endroit.",
+      },
+      {
+        id: 63,
+        question: "Comment hérite-t-on d’une classe en PHP ?",
+        options: [
+          "class Fille extend Mère",
+          "class Fille implements Mère",
+          "class Fille inherits Mère",
+          "class Fille extends Mère",
+        ],
+        correctAnswer: 3,
+        explanation:
+          "La syntaxe 'extends' est utilisée pour hériter d'une classe en PHP. Elle est suivie du nom de la classe parente.",
+      },
+      {
+        id: 64,
+        question:
+          "Quel mot-clé permet de définir une constante dans une classe ?",
+        options: ["define", "static", "const", "final"],
+        correctAnswer: 2,
+        explanation:
+          "Le mot-clé 'const' est utilisé pour définir une constante de classe. Elle est similaire à 'define' mais est définie au niveau de la classe.",
+      },
+      {
+        id: 65,
+        question: "Que fait `json_encode()` ?",
+        options: [
+          "Décode une chaîne JSON",
+          "Encode un tableau en JSON",
+          "Crée un cookie",
+          "Génère un fichier",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'json_encode()' est utilisée pour convertir un tableau PHP en une chaîne JSON. Elle est souvent utilisée pour renvoyer des données au format JSON.",
+      },
+      {
+        id: 66,
+        question: "Quel mot-clé permet d’empêcher l’héritage d’une classe ?",
+        options: ["private", "protected", "final", "sealed"],
+        correctAnswer: 2,
+        explanation:
+          "Le mot-clé 'final' est utilisé pour empêcher l'héritage d'une classe. Une classe 'final' ne peut pas être étendue par d'autres classes.",
+      },
+      {
+        id: 67,
+        question:
+          "Quelle fonction est utilisée pour vérifier si une classe existe ?",
+        options: [
+          "is_class()",
+          "class_exists()",
+          "check_class()",
+          "defined_class()",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'class_exists()' est utilisée pour vérifier si une classe existe. Elle prend en argument le nom de la classe.",
+      },
+      {
+        id: 68,
+        question: "Quel est le rôle de `PDO::prepare()` ?",
+        options: [
+          "Exécuter une requête SQL",
+          "Préparer une requête paramétrée",
+          "Connecter à une base",
+          "Créer une table",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La méthode 'prepare()' est utilisée pour préparer une requête SQL avec des paramètres. Elle retourne un objet PDOStatement.",
+      },
+      {
+        id: 69,
+        question: "Que fait `password_hash()` ?",
+        options: [
+          "Crypte une image",
+          "Génère un mot de passe aléatoire",
+          "Hash un mot de passe de manière sécurisée",
+          "Vérifie un mot de passe",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "La fonction 'password_hash()' est utilisée pour crypter un mot de passe de manière sécurisée. Elle prend en argument le mot de passe et le type de hachage.",
+      },
+      {
+        id: 70,
+        question: "Quelle est l’utilité de `filter_var()` ?",
+        options: [
+          "Nettoyer une chaîne",
+          "Valider ou filtrer une variable",
+          "Crypter une donnée",
+          "Formater une date",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'filter_var()' est utilisée pour valider ou filtrer une variable. Elle prend en argument la variable et le filtre à appliquer.",
+      },
+      {
+        id: 71,
+        question: "Que retourne `array_merge([1, 2], [3, 4])` ?",
+        options: ["[1, 2]", "[3, 4]", "[1, 2, 3, 4]", "Erreur"],
+        correctAnswer: 2,
+        explanation:
+          "La fonction 'array_merge()' fusionne deux tableaux PHP. Elle prend en argument les tableaux à fusionner et retourne un nouveau tableau.",
+      },
+      {
+        id: 72,
+        question: "Quel est le rôle de `mysqli_connect()` ?",
+        options: [
+          "Exécuter une requête",
+          "Se connecter à une base MySQL",
+          "Créer un utilisateur",
+          "Créer une base de données",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'mysqli_connect()' est utilisée pour établir une connexion à une base de données MySQL. Elle prend en argument les paramètres de connexion.",
+      },
+      {
+        id: 73,
+        question: 'Quel est le résultat de `count(["a", "b", "c"])` ?',
+        options: ["2", "3", "4", "1"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'count()' est utilisée pour compter le nombre d'éléments dans un tableau. Elle peut être utilisée avec 'sizeof()' qui est un alias.",
+      },
+      {
+        id: 74,
+        question: "Que permet `foreach` ?",
+        options: [
+          "Exécuter une fonction",
+          "Afficher une variable",
+          "Parcourir un tableau",
+          "Créer une boucle infinie",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "La boucle 'foreach' est utilisée pour parcourir les éléments d'un tableau. Elle est souvent utilisée pour itérer sur les éléments d'un tableau.",
+      },
+      {
+        id: 75,
+        question: "Comment accéder à une variable de session ?",
+        options: [
+          '$_SESSION["nom"]',
+          'session["nom"]',
+          'get_session("nom")',
+          '$_SESS["nom"]',
+        ],
+        correctAnswer: 0,
+        explanation:
+          "La superglobale '$_SESSION' est utilisée pour accéder aux variables de session PHP. Elle est un tableau associatif qui stocke les données de session.",
+      },
+      {
+        id: 76,
+        question:
+          "Quelle est la bonne extension de fichier pour un script PHP ?",
+        options: [".ph", ".php", ".phtml", ".script"],
+        correctAnswer: 1,
+        explanation:
+          "L'extension .php est la plus courante pour les fichiers PHP. Elle indique au serveur que le fichier doit être interprété comme du PHP.",
+      },
+      {
+        id: 77,
+        question: "Quel est le mot-clé pour définir une méthode statique ?",
+        options: ["static", "const", "this", "private"],
+        correctAnswer: 0,
+        explanation:
+          "Le mot-clé 'static' est utilisé pour définir une méthode statique. Une méthode statique peut être appelée sans instancier la classe.",
+      },
+      {
+        id: 78,
+        question: "Que fait `require_once` ?",
+        options: [
+          "Inclut un fichier chaque fois",
+          "Inclut un fichier une seule fois",
+          "Exécute un script",
+          "Crée une variable",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'require_once()' est utilisée pour inclure un fichier PHP une seule fois. Elle empêche la redéfinition de la fonction si le fichier est déjà inclus.",
+      },
+      {
+        id: 79,
+        question: "Quelle fonction permet de lire une ligne dans un fichier ?",
+        options: ["read()", "fgets()", "file_get()", "scan()"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'fgets()' est utilisée pour lire une ligne à la fois d'un fichier. Elle prend en argument le chemin du fichier et retourne la ligne lue.",
+      },
+      {
+        id: 80,
+        question: "Quelle fonction supprime un fichier ?",
+        options: ["file_delete()", "unlink()", "remove()", "delete_file()"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'unlink()' est utilisée pour supprimer un fichier. Elle prend en argument le chemin du fichier à supprimer.",
+      },
+      {
+        id: 81,
+        question: "Comment s’écrit un commentaire sur une seule ligne ?",
+        options: [
+          "# commentaire",
+          "// commentaire",
+          "/* commentaire */",
+          "Les deux premiers",
+        ],
+        correctAnswer: 3,
+        explanation:
+          "La syntaxe '//' est utilisée pour écrire un commentaire sur une seule ligne en PHP. Elle commence par '//' et continue jusqu'à la fin de la ligne.",
+      },
+      {
+        id: 82,
+        question: "Comment se nomme l’opérateur de résolution de portée ?",
+        options: ["->", "::", ".", "#"],
+        correctAnswer: 1,
+        explanation:
+          "L'opérateur '::' est utilisé pour accéder aux propriétés et aux méthodes statiques d'une classe. Il est suivi du nom de la propriété ou de la méthode.",
+      },
+      {
+        id: 83,
+        question: "Que signifie `OOP` en PHP ?",
+        options: [
+          "Option Overwriting Protocol",
+          "Object-Oriented Programming",
+          "Open Object Process",
+          "Object Operational Path",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "OOP signifie Programmation Orientée Objet. C'est un paradigme de programmation qui utilise des objets et des classes pour organiser le code.",
+      },
+      {
+        id: 84,
+        question: "Quelle méthode permet de désérialiser une chaîne ?",
+        options: ["unserialize()", "decode()", "json_decode()", "extract()"],
+        correctAnswer: 0,
+        explanation:
+          "La fonction 'unserialize()' est utilisée pour convertir une chaîne JSON en un tableau PHP. Elle prend en argument la chaîne JSON.",
+      },
+      {
+        id: 85,
+        question: 'Comment afficher "Bonjour" avec PHP ?',
+        options: [
+          'echo("Bonjour");',
+          'print("Bonjour");',
+          'printf("Bonjour");',
+          "Toutes ces réponses",
+        ],
+        correctAnswer: 3,
+        explanation:
+          "Les trois fonctions 'echo()', 'print()' et 'printf()' sont utilisées pour afficher du texte à l'écran en PHP. 'printf()' est souvent utilisé pour formater le texte.",
+      },
+      {
+        id: 86,
+        question: "Quelle fonction retourne l’heure actuelle ?",
+        options: ["time()", "now()", "getTime()", "date_now()"],
+        correctAnswer: 0,
+        explanation:
+          "La fonction 'time()' est utilisée pour obtenir l'heure actuelle en secondes depuis le 1er janvier 1970. Elle peut être utilisée avec 'date()' pour formater l'heure.",
+      },
+      {
+        id: 87,
+        question: "Quel est le rôle de `header()` ?",
+        options: [
+          "Modifier l’en-tête HTTP",
+          "Afficher une page",
+          "Rediriger ou modifier HTTP",
+          "Créer une variable",
+        ],
+        correctAnswer: 2,
+        explanation:
+          "La fonction 'header()' est utilisée pour envoyer des en-têtes HTTP au client. Elle peut être suivie de 'send()' pour envoyer le corps de la réponse.",
+      },
+      {
+        id: 88,
+        question: "Que fait `ob_start()` ?",
+        options: [
+          "Ouvre un fichier",
+          "Démarre la sortie tampon",
+          "Démarre une session",
+          "Efface un tampon",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'ob_start()' est utilisée pour démarrer la sortie tampon en PHP. Elle permet de capturer la sortie HTML avant qu'elle ne soit envoyée au client.",
+      },
+      {
+        id: 89,
+        question: "Quelle extension permet l’utilisation de PDO avec MySQL ?",
+        options: ["pdo_mysql", "pdo_pgsql", "mysqli", "pdo_sqlite"],
+        correctAnswer: 0,
+        explanation:
+          "L'extension 'pdo_mysql' est utilisée pour interagir avec une base de données MySQL via PDO. Elle permet de créer des connexions, exécuter des requêtes, etc.",
+      },
+      {
+        id: 90,
+        question: "Quel est le rôle de `__construct()` ?",
+        options: [
+          "Méthode de destruction",
+          "Méthode d’initialisation",
+          "Méthode magique d’appel",
+          "Méthode finale",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La méthode magique '__construct()' est appelée lorsqu'une nouvelle instance d'une classe est créée. Elle est souvent utilisée pour initialiser les propriétés de l'objet.",
+      },
+      {
+        id: 91,
+        question: "Que signifie `CLI` ?",
+        options: [
+          "Command Line Interface",
+          "Central Logic Interface",
+          "Command Logic Interpreter",
+          "Common Library Integration",
+        ],
+        correctAnswer: 0,
+        explanation:
+          "CLI signifie Interface de Ligne de Commande. Elle permet d'exécuter des scripts PHP depuis la ligne de commande.",
+      },
+      {
+        id: 92,
+        question: "Comment vérifier si un fichier existe ?",
+        options: ["exists()", "file_exists()", "check_file()", "is_file()"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'file_exists()' est utilisée pour vérifier si un fichier existe à un chemin spécifique. Elle retourne TRUE si le fichier existe, FALSE sinon.",
+      },
+      {
+        id: 93,
+        question: "Quel mot-clé permet d’utiliser un espace de noms ?",
+        options: ["use", "include", "require", "namespace"],
+        correctAnswer: 0,
+        explanation:
+          "Le mot-clé 'use' est utilisé pour utiliser un espace de noms en PHP. Il est suivi du nom de l'espace de noms.",
+      },
+      {
+        id: 94,
+        question: "Quel mot-clé permet de définir un trait ?",
+        options: ["class", "trait", "extends", "implements"],
+        correctAnswer: 1,
+        explanation:
+          "Le mot-clé 'trait' est utilisé pour définir un trait en PHP. Un trait est un ensemble de méthodes qui peuvent être réutilisées dans plusieurs classes.",
+      },
+      {
+        id: 95,
+        question:
+          "Quelle méthode est appelée lors de la destruction d’un objet ?",
+        options: ["__destroy()", "__destruct()", "destroy()", "destruct()"],
+        correctAnswer: 1,
+        explanation:
+          "La méthode magique '__destruct()' est appelée lorsqu'un objet PHP est détruit. Elle est souvent utilisée pour libérer des ressources.",
+      },
+      {
+        id: 96,
+        question: "Quel opérateur permet la concaténation en PHP ?",
+        options: ["+", ".", "&", "::"],
+        correctAnswer: 1,
+        explanation:
+          "L'opérateur '.' est utilisé pour la concaténation de chaînes de caractères en PHP. Il permet de combiner plusieurs chaînes.",
+      },
+      {
+        id: 97,
+        question: "Quelle est la sortie de `var_dump(null)` ?",
+        options: ["bool(false)", "NULL", "0", "undefined"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'var_dump()' est utilisée pour afficher des informations détaillées sur une variable, y compris son type et sa valeur. Dans ce cas, 'var_dump(null)' affiche 'NULL'.",
+      },
+      {
+        id: 98,
+        question: "Que fait `strtolower()` ?",
+        options: [
+          "Convertit en majuscules",
+          "Convertit en minuscules",
+          "Compresse la chaîne",
+          "Transforme en tableau",
+        ],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'strtolower()' est utilisée pour convertir une chaîne de caractères en minuscules. Elle prend en argument la chaîne à convertir.",
+      },
+      {
+        id: 99,
+        question:
+          "Quelle fonction permet de lire tous les fichiers d’un dossier ?",
+        options: ["read_dir()", "scandir()", "listdir()", "dir_list()"],
+        correctAnswer: 1,
+        explanation:
+          "La fonction 'scandir()' est utilisée pour lire le contenu d'un dossier. Elle prend en argument le chemin du dossier et retourne un tableau des fichiers et dossiers.",
+      },
+      {
+        id: 100,
+        question: "Quelle est la sortie de `true && false` ?",
+        options: ["true", "false", "1", "0"],
+        correctAnswer: 1,
+        explanation:
+          "L'opérateur '&&' (ET logique) retourne FALSE si l'une des deux valeurs est FALSE. Dans ce cas, 'true && false' retourne FALSE.",
+      },
+    ],
+  },
 ];
-export default quizCategories
+export default quizCategories;
