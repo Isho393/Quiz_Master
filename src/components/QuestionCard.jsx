@@ -69,6 +69,13 @@ export default function QuestionCard  ({
         ))}
       </div>
 
+      {showResult && question.explanation && (
+        <div className="mt-6 p-4 bg-blue-50 border-l-4 border-blue-400 rounded">
+          <span className="block text-blue-700 font-semibold mb-1">Explication :</span>
+          <span className="text-gray-700">{question.explanation}</span>
+        </div>
+      )}
+
       {!showResult && selectedAnswer !== null && (
         <button
           onClick={onSubmit}
