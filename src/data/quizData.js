@@ -996,7 +996,7 @@ Cela indique au serveur web que le fichier contient du code PHP qui doit être i
         id: 23,
         question: 'Que retourne `strpos("bonjour", "jour")` ?',
         options: ["false", "3", "4", "5"],
-        correctAnswer: 2,
+        correctAnswer: 1,
         explanation: `La fonction 'strpos()' retourne la position de la première occurrence d'une sous-chaîne dans une chaîne. Dans ce cas, 'strpos("bonjour", "jour")' retourne 4.`,
       },
       {
@@ -1808,5 +1808,847 @@ Cela indique au serveur web que le fichier contient du code PHP qui doit être i
       },
     ],
   },
+  {
+     id: "Laravel - Basique",
+    name: "Laravel - Basique",
+    icon: "🧠",
+    description: "Approfondissez vos connaissances LARAVEL",
+    color: "from-pink-500 to-red-600",
+    questions: [
+       {
+      id: 1,
+      question: "Quelle commande crée un nouveau projet Laravel ?",
+      options: [
+        "composer create-project laravel/laravel mon-projet",
+        "php artisan new mon-projet",
+        "npm create laravel@latest mon-projet",
+        "composer laravel new mon-projet"
+      ],
+      correctAnswer: 0,
+      explanation: "La méthode standard est `composer create-project laravel/laravel mon-projet`."
+    },
+    {
+      id: 2,
+      question: "Dans quel fichier déclare-t-on les routes web par défaut ?",
+      options: ["routes/web.php", "routes/api.php", "app/Http/routes.php", "config/routes.php"],
+      correctAnswer: 0,
+      explanation: "Les routes HTTP classiques sont définies dans `routes/web.php`."
+    },
+    {
+      id: 3,
+      question: "Quel moteur de templates Laravel utilise pour les vues ?",
+      options: ["Blade", "Twig", "Mustache", "Handlebars"],
+      correctAnswer: 0,
+      explanation: "Laravel utilise Blade (`.blade.php`) pour ses vues."
+    },
+    {
+      id: 4,
+      question: "Quelle commande exécute les migrations ?",
+      options: ["php artisan migrate", "php artisan make:migration", "php artisan db:seed", "php artisan schema:run"],
+      correctAnswer: 0,
+      explanation: "`php artisan migrate` applique les migrations en attente."
+    },
+    {
+      id: 5,
+      question: "Où se trouvent les contrôleurs par défaut ?",
+      options: ["app/Http/Controllers", "app/Controllers", "routes/Controllers", "resources/controllers"],
+      correctAnswer: 0,
+      explanation: "Par convention, les contrôleurs sont dans `app/Http/Controllers`."
+    },
+    {
+      id: 6,
+      question: "Quel dossier stocke les vues Blade ?",
+      options: ["resources/views", "app/views", "public/views", "storage/views"],
+      correctAnswer: 0,
+      explanation: "Les vues sont dans `resources/views`."
+    },
+    {
+      id: 7,
+      question: "Comment renvoyer une réponse JSON depuis un contrôleur ?",
+      options: [
+        "return response()->json($data);",
+        "return json_encode($data);",
+        "echo json($data);",
+        "return Response::toJson($data);"
+      ],
+      correctAnswer: 0,
+      explanation: "`response()->json($data)` crée une réponse JSON avec les bons en-têtes."
+    },
+    {
+      id: 8,
+      question: "Quelle façade est utilisée pour le cache ?",
+      options: ["Cache", "Storage", "Config", "Queue"],
+      correctAnswer: 0,
+      explanation: "La façade `Cache` expose `get`, `put`, `remember`, etc."
+    },
+    {
+      id: 9,
+      question: "Quelle commande lance un serveur de développement ?",
+      options: ["php artisan serve", "npm run dev", "composer serve", "php -S app.php"],
+      correctAnswer: 0,
+      explanation: "`php artisan serve` démarre un serveur local sur un port libre."
+    },
+    {
+      id: 10,
+      question: "Où se trouvent les fichiers de configuration ?",
+      options: ["config/", "app/Config", "resources/config", "bootstrap/config"],
+      correctAnswer: 0,
+      explanation: "Les fichiers de configuration sont dans le dossier `config/`."
+    },
+    {
+      id: 11,
+      question: "Qu’est-ce qu’Eloquent dans Laravel ?",
+      options: [
+        "Un ORM (Object-Relational Mapper)",
+        "Un moteur de queue",
+        "Un système de vues",
+        "Un planificateur de tâches"
+      ],
+      correctAnswer: 0,
+      explanation: "Eloquent est l’ORM de Laravel pour interagir avec la base de données."
+    },
+    {
+      id: 12,
+      question: "Quelle méthode Eloquent lève une exception si aucun résultat n’est trouvé ?",
+      options: ["first()", "find()", "firstOrFail()", "get()"],
+      correctAnswer: 2,
+      explanation: "`firstOrFail()` (ou `findOrFail()`) lève une `ModelNotFoundException`."
+    },
+    {
+      id: 13,
+      question: "Quel fichier contient la configuration de la connexion base de données ?",
+      options: ["config/database.php", "config/db.php", ".env", "database/config.php"],
+      correctAnswer: 0,
+      explanation: "La configuration est dans `config/database.php` (valeurs provenant de `.env`)."
+    },
+    {
+      id: 14,
+      question: "Comment accéder proprement à APP_NAME dans l’application ?",
+      options: ["config('app.name')", "env('APP_NAME') en contrôleur", "getenv('app.name')", "request()->env('APP_NAME')"],
+      correctAnswer: 0,
+      explanation: "Lis dans `config('app.name')` (les configs pouvant être mises en cache)."
+    },
+    {
+      id: 15,
+      question: "Comment définir rapidement une route GET simple ?",
+      options: [
+        "Route::get('/hello', fn() => 'Hello');",
+        "Route::route('/hello', 'GET');",
+        "Router::get('/hello');",
+        "Route::any('/hello');"
+      ],
+      correctAnswer: 0,
+      explanation: "La fonction fléchée est supportée pour des closures simples."
+    },
+    {
+      id: 16,
+      question: "Quelle commande génère un contrôleur resource ?",
+      options: [
+        "php artisan make:controller UserController --resource",
+        "php artisan make:controller --rest UserController",
+        "php artisan controller:make UserController",
+        "php artisan make:controller UserController --crud"
+      ],
+      correctAnswer: 0,
+      explanation: "`--resource` crée les méthodes REST communes."
+    },
+    {
+      id: 17,
+      question: "Quelle commande crée un modèle avec migration associée ?",
+      options: [
+        "php artisan make:model Post -m",
+        "php artisan make:model Post --mig",
+        "php artisan model:make Post -m",
+        "php artisan make:migration Post"
+      ],
+      correctAnswer: 0,
+      explanation: "`-m` génère la migration en même temps que le modèle."
+    },
+    {
+      id: 18,
+      question: "Quel dossier contient les seeders par défaut ?",
+      options: ["database/seeders", "database/seeds", "app/Seeders", "config/seeders"],
+      correctAnswer: 0,
+      explanation: "Depuis Laravel 8+, les seeders sont dans `database/seeders`."
+    },
+    {
+      id: 19,
+      question: "Comment exécuter les seeders ?",
+      options: [
+        "php artisan db:seed",
+        "php artisan migrate:seed",
+        "php artisan seed:run",
+        "php artisan db:run"
+      ],
+      correctAnswer: 0,
+      explanation: "`php artisan db:seed` (souvent après `migrate:fresh --seed`)."
+    },
+    {
+      id: 20,
+      question: "Quelle méthode de Request récupère une valeur d’entrée ?",
+      options: ["$request->input('key')", "Request::get('key')", "$request->value('key')", "input('key') sans Request"],
+      correctAnswer: 0,
+      explanation: "`$request->input()` (ou `$request->get()`) lit les entrées."
+    },
+    {
+      id: 21,
+      question: "Quel middleware protège contre les attaques CSRF ?",
+      options: ["VerifyCsrfToken", "TrimStrings", "EncryptCookies", "ThrottleRequests"],
+      correctAnswer: 0,
+      explanation: "Le middleware `VerifyCsrfToken` gère le token CSRF des formulaires."
+    },
+    {
+      id: 22,
+      question: "Quelle commande vide le cache de configuration ?",
+      options: [
+        "php artisan config:clear",
+        "php artisan cache:reset",
+        "php artisan clear:config",
+        "php artisan app:clear"
+      ],
+      correctAnswer: 0,
+      explanation: "`config:clear` supprime le cache des configurations."
+    },
+    {
+      id: 23,
+      question: "Quel helper génère une URL signée temporaire ?",
+      options: ["URL::temporarySignedRoute()", "route()", "url()", "asset()"],
+      correctAnswer: 0,
+      explanation: "Les URLs signées permettent de vérifier l’intégrité et l’expiration."
+    },
+    {
+      id: 24,
+      question: "Comment stocker un fichier sur le disque par défaut ?",
+      options: [
+        "Storage::put('file.txt', 'contenu');",
+        "File::store('file.txt', 'contenu');",
+        "Storage::store('file.txt', 'contenu');",
+        "Disk::putDefault('file.txt', 'contenu');"
+      ],
+      correctAnswer: 0,
+      explanation: "`Storage` est la façade pour le Filesystem (local/S3/etc.)."
+    },
+    {
+      id: 25,
+      question: "Quelle méthode de route applique un middleware ?",
+      options: ["->middleware('auth')", "->guard('auth')", "->use('auth')", "->with('auth')"],
+      correctAnswer: 0,
+      explanation: "On chaîne `->middleware()` sur la définition de route."
+    },
+    {
+      id: 26,
+      question: "Quel artisan liste toutes les routes ?",
+      options: [
+        "php artisan route:list",
+        "php artisan routes",
+        "php artisan list:routes",
+        "php artisan route:show"
+      ],
+      correctAnswer: 0,
+      explanation: "`route:list` affiche méthodes, URI, nom, action, middleware."
+    },
+    {
+      id: 27,
+      question: "Quel fichier centralise la définition des commandes planifiées ?",
+      options: ["app/Console/Kernel.php", "routes/console.php", "app/Providers/AppServiceProvider.php", "config/schedule.php"],
+      correctAnswer: 0,
+      explanation: "La méthode `schedule()` du `Console\\Kernel` déclare les tâches."
+    },
+    {
+      id: 28,
+      question: "Comment activer le debug bar natif de Laravel ?",
+      options: [
+        "APP_DEBUG=true dans .env",
+        "DEBUG_BAR=true dans .env",
+        "Installer par défaut aucune action",
+        "php artisan debug:on"
+      ],
+      correctAnswer: 0,
+      explanation: "Mettre `APP_DEBUG=true` active l’affichage des erreurs détaillées."
+    },
+    {
+      id: 29,
+      question: "Quelle méthode de validation rapide existe sur la Request ?",
+      options: ["$request->validate([...])", "Validator::quick([...])", "$request->rules([...])", "Form::validate([...])"],
+      correctAnswer: 0,
+      explanation: "`$request->validate()` valide et redirige automatiquement en cas d’erreur."
+    },
+    {
+      id: 30,
+      question: "Quel artisan crée un Form Request dédié ?",
+      options: [
+        "php artisan make:request StorePostRequest",
+        "php artisan make:form StorePostRequest",
+        "php artisan request:make StorePostRequest",
+        "php artisan make:formrequest StorePostRequest"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:request` génère une classe pour `authorize()` et `rules()`."
+    },
+    ],
+  },
+  {
+     id: "Laravel - Junior",
+    name: "Laravel - Junior",
+    icon: "🧠",
+    description: "Approfondissez vos connaissances LARAVEL",
+    color: "from-pink-500 to-red-600",
+    questions: [
+      {
+      id: 31,
+      question: "Quelle méthode applique un eager loading à la requête Eloquent ?",
+      options: ["with()", "load()", "append()", "sync()"],
+      correctAnswer: 0,
+      explanation: "`with()` charge les relations au moment de la requête."
+    },
+    {
+      id: 32,
+      question: "Comment définir une relation One‑to‑Many côté parent ?",
+      options: ["hasMany()", "belongsTo()", "morphMany()", "hasOneThrough()"],
+      correctAnswer: 0,
+      explanation: "`hasMany()` sur le parent, `belongsTo()` sur l’enfant."
+    },
+    {
+      id: 33,
+      question: "Quelle annotation de route nomme une route ?",
+      options: ["->name('posts.index')", "->as('posts.index')", "->alias('posts.index')", "->route('posts.index')"],
+      correctAnswer: 0,
+      explanation: "On enchaîne `->name()` pour nommer une route."
+    },
+    {
+      id: 34,
+      question: "Quel artisan publie les assets d’un package ?",
+      options: [
+        "php artisan vendor:publish",
+        "php artisan package:publish",
+        "php artisan vendor:assets",
+        "php artisan package:assets"
+      ],
+      correctAnswer: 0,
+      explanation: "`vendor:publish` copie les assets/config/views du package."
+    },
+    {
+      id: 35,
+      question: "Quel mécanisme permet d’autoriser des actions au niveau modèle ?",
+      options: ["Policies", "Migrations", "Seeders", "Broadcasting"],
+      correctAnswer: 0,
+      explanation: "Les Policies centralisent la logique d’autorisation."
+    },
+    {
+      id: 36,
+      question: "Comment injecter un service depuis le conteneur dans un contrôleur ?",
+      options: [
+        "Via l’injection de dépendances dans la signature de méthode",
+        "Via `app()->get()` uniquement",
+        "En lisant directement `.env`",
+        "En globalisant une variable"
+      ],
+      correctAnswer: 0,
+      explanation: "Le conteneur résout automatiquement les dépendances typées."
+    },
+    {
+      id: 37,
+      question: "Quel artisan crée une Policy liée à un modèle ?",
+      options: [
+        "php artisan make:policy PostPolicy --model=Post",
+        "php artisan make:guard PostPolicy",
+        "php artisan auth:policy PostPolicy",
+        "php artisan make:gate PostPolicy"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:policy --model=` relie la policy au modèle."
+    },
+    {
+      id: 38,
+      question: "Quelle méthode effectue une pagination classique ?",
+      options: ["paginate()", "chunk()", "simplePaginate()", "cursorPaginate()"],
+      correctAnswer: 0,
+      explanation: "`paginate()` retourne une pagination avec les liens complets."
+    },
+    {
+      id: 39,
+      question: "Comment définir un rate limit personnalisé ?",
+      options: [
+        "RateLimiter::for('api', fn() => Limit::perMinute(60));",
+        "Throttle::set(60);",
+        "Limiter::minute(60);",
+        "Gate::define('rate', ...);"
+      ],
+      correctAnswer: 0,
+      explanation: "On déclare dans un provider (souvent `RouteServiceProvider`) et on l’utilise avec `throttle:api`."
+    },
+    {
+      id: 40,
+      question: "Quelle commande crée un Job pour la file d’attente ?",
+      options: [
+        "php artisan make:job SendEmail",
+        "php artisan make:queue SendEmail",
+        "php artisan queue:job SendEmail",
+        "php artisan job:create SendEmail"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:job` génère un job dispatchable (sync/queue)."
+    },
+    {
+      id: 41,
+      question: "Quel fichier configure les connexions de stockage (ex. S3) ?",
+      options: ["config/filesystems.php", "config/storage.php", "config/disks.php", "config/assets.php"],
+      correctAnswer: 0,
+      explanation: "Les ‘disks’ (local, public, s3, etc.) se déclarent dans `filesystems.php`."
+    },
+    {
+      id: 42,
+      question: "Quelle méthode Eloquent synchronise une relation Many‑to‑Many ?",
+      options: ["sync()", "attach()", "detach()", "toggle()"],
+      correctAnswer: 0,
+      explanation: "`sync()` remplace les liaisons par le nouvel ensemble d’IDs."
+    },
+    {
+      id: 43,
+      question: "Quelle classe utilisez-vous pour transformer proprement des modèles en JSON d’API ?",
+      options: ["JsonResource", "FormRequest", "Seeder", "Factory"],
+      correctAnswer: 0,
+      explanation: "Les `JsonResource`/`ResourceCollection` normalisent les réponses API."
+    },
+    {
+      id: 44,
+      question: "Comment charger paresseusement une relation après récupération du modèle ?",
+      options: ["load('relation')", "with('relation')", "eager('relation')", "append('relation')"],
+      correctAnswer: 0,
+      explanation: "`load()` charge la relation sur des instances existantes."
+    },
+    {
+      id: 45,
+      question: "Quelle commande exécute toutes les tâches planifiées une fois ?",
+      options: [
+        "php artisan schedule:run",
+        "php artisan schedule:work",
+        "php artisan tasks:run",
+        "php artisan cron:run"
+      ],
+      correctAnswer: 0,
+      explanation: "`schedule:run` déclenche les tâches dues à l’instant T."
+    },
+    {
+      id: 46,
+      question: "Quel middleware applique une limitation de débit (throttle) ?",
+      options: ["throttle:nom", "rate:nom", "limit:nom", "quota:nom"],
+      correctAnswer: 0,
+      explanation: "On utilise `->middleware('throttle:nom')` après avoir défini `RateLimiter::for('nom', ...)`."
+    },
+    {
+      id: 47,
+      question: "Quelle classe centralise les événements et listeners enregistrés ?",
+      options: ["EventServiceProvider", "AppServiceProvider", "AuthServiceProvider", "RouteServiceProvider"],
+      correctAnswer: 0,
+      explanation: "`EventServiceProvider` mappe les events aux listeners."
+    },
+    {
+      id: 48,
+      question: "Comment valider des données avec une règle unique et un message personnalisé dans un Form Request ?",
+      options: [
+        "rules() et messages()",
+        "validate() et errors()",
+        "schema() et messages()",
+        "authorizeRules() et messages()"
+      ],
+      correctAnswer: 0,
+      explanation: "Définir `rules()` puis `messages()` pour customiser les messages."
+    },
+    {
+      id: 49,
+      question: "Quel artisan permet de créer un seeder ?",
+      options: [
+        "php artisan make:seeder UsersTableSeeder",
+        "php artisan db:seeder UsersTableSeeder",
+        "php artisan seeder:make UsersTableSeeder",
+        "php artisan db:seed --make UsersTableSeeder"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:seeder` crée un seeder que l’on référence dans `DatabaseSeeder`."
+    },
+    {
+      id: 50,
+      question: "Quelle méthode envoie une notification par mail à un Notifiable ?",
+      options: ["notify()", "mail()", "send()", "dispatch()"],
+      correctAnswer: 0,
+      explanation: "Les modèles utilisant le trait `Notifiable` exposent `notify()`."
+    },
+    {
+      id: 51,
+      question: "Quel helper renvoie la réponse de téléchargement d’un fichier stocké ?",
+      options: ["Storage::download()", "response()->file()", "Storage::getFile()", "Storage::response()"],
+      correctAnswer: 0,
+      explanation: "`Storage::download($path)` crée une réponse `attachment`."
+    },
+    {
+      id: 52,
+      question: "Comment protéger une route via la policy `update` d’un modèle `Post` ?",
+      options: [
+        "->can('update', Post::class)",
+        "->middleware('policy:update')",
+        "->authorize('update')",
+        "->gate('update')"
+      ],
+      correctAnswer: 0,
+      explanation: "On peut utiliser le middleware `can`/`->can('update', $post)` ou l’helper `authorize()`."
+    },
+    {
+      id: 53,
+      question: "Quelle méthode déclenche un événement manuellement ?",
+      options: ["event(new SomethingHappened())", "dispatch(new SomethingHappened())", "broadcast(new SomethingHappened())", "emit(new SomethingHappened())"],
+      correctAnswer: 0,
+      explanation: "`event()` émet un événement dans le système d’événements Laravel."
+    },
+    {
+      id: 54,
+      question: "Quelle relation modélise un `belongsToMany` avec table pivot ?",
+      options: ["belongsToMany()", "hasMany()", "morphMany()", "hasOneThrough()"],
+      correctAnswer: 0,
+      explanation: "`belongsToMany()` gère les relations N‑N via table pivot."
+    },
+    {
+      id: 55,
+      question: "Quel artisan génère une Factory de modèle ?",
+      options: [
+        "php artisan make:factory PostFactory --model=Post",
+        "php artisan factory:make PostFactory",
+        "php artisan make:model Post --factory-only",
+        "php artisan db:factory Post"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:factory` crée une factory typée pour les tests/seed."
+    },
+    {
+      id: 56,
+      question: "Quelle méthode de pagination est la plus légère (sans compter le total) ?",
+      options: ["simplePaginate()", "paginate()", "cursorPaginate()", "chunk()"],
+      correctAnswer: 0,
+      explanation: "`simplePaginate()` ne fait pas de COUNT global, plus léger."
+    },
+    {
+      id: 57,
+      question: "Comment rediriger vers une route nommée avec paramètres ?",
+      options: [
+        "return redirect()->route('posts.show', $post);",
+        "return redirect('posts.show', $post);",
+        "return route()->redirect('posts.show', $post);",
+        "return redirect()->toRoute('posts.show', $post);"
+      ],
+      correctAnswer: 0,
+      explanation: "`redirect()->route()` génère l’URL depuis le nom de la route."
+    },
+    {
+      id: 58,
+      question: "Quelle classe définit les Gates et Policies globales ?",
+      options: ["AuthServiceProvider", "EventServiceProvider", "RouteServiceProvider", "AppServiceProvider"],
+      correctAnswer: 0,
+      explanation: "On enregistre les policies et gates dans `AuthServiceProvider`."
+    },
+    {
+      id: 59,
+      question: "Comment envoyer un email via Mailable ?",
+      options: [
+        "Mail::to($user)->send(new WelcomeMail());",
+        "Mail::sendTo($user, WelcomeMail::class);",
+        "Notification::mail($user, WelcomeMail::class);",
+        "Mail::queueNow(new WelcomeMail($user));"
+      ],
+      correctAnswer: 0,
+      explanation: "`Mail::to(...)->send(new Mailable)` est l’API standard."
+    },
+    {
+      id: 60,
+      question: "Comment invalider une entrée de cache spécifique ?",
+      options: ["Cache::forget('clé')", "Cache::clear()", "Cache::flushOne('clé')", "Cache::drop('clé')"],
+      correctAnswer: 0,
+      explanation: "`Cache::forget('clé')` supprime une clé spécifique."
+    },
+    ],
+  },
+  {
+     id: "Laravel - Avancé",
+    name: "Laravel - Avancé",
+    icon: "🧠",
+    description: "Approfondissez vos connaissances LARAVEL",
+    color: "from-pink-500 to-red-600",
+    questions: [
+      {
+      id: 61,
+      question: "Différence clé entre `bind()` et `singleton()` dans le conteneur ?",
+      options: [
+        "`bind()` crée une nouvelle instance à chaque résolution, `singleton()` partage une instance unique",
+        "`bind()` est plus rapide que `singleton()`",
+        "`singleton()` n’accepte pas de closures",
+        "Aucune différence"
+      ],
+      correctAnswer: 0,
+      explanation: "`bind()` => instances multiples; `singleton()` => une instance partagée."
+    },
+    {
+      id: 62,
+      question: "Comment créer un batch de jobs et suivre sa progression ?",
+      options: ["Bus::batch([...])->dispatch()", "Queue::bulk([...])", "Bus::chain([...])->dispatch()", "dispatchBatch([...])"],
+      correctAnswer: 0,
+      explanation: "`Bus::batch()` gère lots, callbacks (then/catch/finally) et suivi."
+    },
+    {
+      id: 63,
+      question: "Quel mécanisme diffuse des événements côté client en temps réel ?",
+      options: ["Broadcasting (WebSockets)", "Observers", "Notifications database", "Scheduler"],
+      correctAnswer: 0,
+      explanation: "Le broadcasting (Pusher/Ably/Laravel WebSockets) envoie des événements temps réel."
+    },
+    {
+      id: 64,
+      question: "Comment définir un limiter dynamique basé sur l’utilisateur et l’IP ?",
+      options: [
+        "RateLimiter::for('api', fn (Request $r) => Limit::perMinute(60)->by($r->user()?->id ?: $r->ip()))",
+        "Throttle::userIp(60)",
+        "Limiter::dynamic(60)",
+        "Gate::limit(60)"
+      ],
+      correctAnswer: 0,
+      explanation: "Utiliser `by()` pour l’ID d’utilisateur ou l’IP."
+    },
+    {
+      id: 65,
+      question: "Quelle est la bonne pratique pour gérer une transaction DB ?",
+      options: [
+        "DB::transaction(fn() => /* opérations */);",
+        "DB::begin(); /* ... */ DB::commit(); sans try/catch",
+        "Toujours désactiver les exceptions PDO",
+        "Utiliser `Schema::transaction()`"
+      ],
+      correctAnswer: 0,
+      explanation: "`DB::transaction()` gère commit/rollback automatiquement en cas d’exception."
+    },
+    {
+      id: 66,
+      question: "Quel type de relation modélise un polymorphisme (ex. comments sur plusieurs modèles) ?",
+      options: ["morphMany/morphTo", "belongsToMany", "hasManyThrough", "hasOneThrough"],
+      correctAnswer: 0,
+      explanation: "Les relations morphiques (`morphTo`, `morphMany`, etc.) gèrent le polymorphisme."
+    },
+    {
+      id: 67,
+      question: "Quelle stratégie de cache pour mémoïser une requête coûteuse avec invalidation simple ?",
+      options: [
+        "Cache::remember('clé', ttl, fn() => ...)",
+        "Cache::forever('clé', ...)",
+        "Stocker en JSON dans public/",
+        "Mettre en cache la page entière uniquement"
+      ],
+      correctAnswer: 0,
+      explanation: "`remember()` calcule et stocke pour un TTL; `forget('clé')` invalide."
+    },
+    {
+      id: 68,
+      question: "Comment créer une règle de validation réutilisable et testable ?",
+      options: [
+        "php artisan make:rule StrongPassword",
+        "Créer une méthode validateX() dans un contrôleur",
+        "Ajouter une clé dans config/validation.php",
+        "Écrire du JS côté client uniquement"
+      ],
+      correctAnswer: 0,
+      explanation: "`make:rule` génère une classe `passes()`/`message()`."
+    },
+    {
+      id: 69,
+      question: "Quelle pagination est optimale pour de très grands datasets avec curseur ?",
+      options: ["cursorPaginate()", "paginate()", "simplePaginate()", "chunkPaginate()"],
+      correctAnswer: 0,
+      explanation: "`cursorPaginate()` évite les offsets coûteux et gère mieux les datasets massifs."
+    },
+    {
+      id: 70,
+      question: "Comment observer automatiquement les événements Eloquent d’un modèle ?",
+      options: ["Créer un Observer et l’enregistrer", "Utiliser des triggers SQL seulement", "Écouter via EventsService uniquement", "Impossible"],
+      correctAnswer: 0,
+      explanation: "`make:observer` puis enregistrement sur le modèle (created, updated, etc.)."
+    },
+    {
+      id: 71,
+      question: "Quelle approche pour un import massif performant ?",
+      options: [
+        "Chunking + transactions + `upsert` si possible",
+        "Boucle `save()` pour chaque ligne",
+        "Désactiver les index en prod",
+        "Charger tout en mémoire"
+      ],
+      correctAnswer: 0,
+      explanation: "Utiliser `chunk()`/`upsert`/transactions pour des imports efficaces."
+    },
+    {
+      id: 72,
+      question: "Comment éviter le N+1 sur plusieurs relations imbriquées ?",
+      options: ["with(['a.b', 'c'])", "loadLater()", "appendAll()", "prefetchAll()"],
+      correctAnswer: 0,
+      explanation: "Déclarer les chemins relationnels dans `with()` pour l’eager loading."
+    },
+    {
+      id: 73,
+      question: "Quelle méthode de Job exécute une tâche immédiatement dans le même process ?",
+      options: ["dispatchSync()", "dispatch()", "dispatchNow()", "queueSync()"],
+      correctAnswer: 0,
+      explanation: "`dispatchSync()` (ou `dispatchNow()` selon version) exécute immédiatement."
+    },
+    {
+      id: 74,
+      question: "Comment structurer proprement les réponses d’erreurs d’API ?",
+      options: [
+        "Utiliser exceptions personnalisées + Handler + JsonResource pour normaliser",
+        "Toujours `dd()` les erreurs",
+        "Retourner des chaînes en clair",
+        "Écrire dans un fichier log et ne rien renvoyer"
+      ],
+      correctAnswer: 0,
+      explanation: "Centraliser dans `app/Exceptions/Handler.php` et garder un format JSON cohérent."
+    },
+    {
+      id: 75,
+      question: "Quel pattern d’architecture aide à séparer Eloquent de la logique métier ?",
+      options: ["Repository + Service", "Fat Controller", "God Model", "Tout dans routes/web.php"],
+      correctAnswer: 0,
+      explanation: "Repository/Service isole l’accès aux données et la logique métier."
+    },
+    {
+      id: 76,
+      question: "Quelle méthode de cache évite les thundering herds sur une clé partagée ?",
+      options: [
+        "Cache::remember('clé', ttl, fn() => ...)",
+        "Cache::put('clé', ...)",
+        "Cache::forever('clé', ...)",
+        "Cache::lock('clé')->get(function(){ ... })"
+      ],
+      correctAnswer: 3,
+      explanation: "Un `lock()` distribué (supporté par Redis) sérielise l’accès concurrent."
+    },
+    {
+      id: 77,
+      question: "Quel composant gère l’abstraction de la file d’attente (drivers sync, database, redis, etc.) ?",
+      options: ["Queue (Illuminate\\Queue)", "Bus (Illuminate\\Bus)", "Events", "Broadcasting"],
+      correctAnswer: 0,
+      explanation: "Le système de queue fournit une API unique pour divers drivers."
+    },
+    {
+      id: 78,
+      question: "Comment partager des données avec toutes les vues Blade ?",
+      options: ["View::share('key', $value)", "config(['view.key' => $value])", "Blade::global('key', $value)", "App::share('view', $value)"],
+      correctAnswer: 0,
+      explanation: "`View::share()` rend la variable disponible globalement aux vues."
+    },
+    {
+      id: 79,
+      question: "Quelle technique pour des exports CSV volumineux sans mémoire excessive ?",
+      options: [
+        "Flux de réponse en streaming (chunk/Generator)",
+        "Construire une énorme chaîne puis retourner",
+        "Tout charger en collection puis `implode()`",
+        "Toujours utiliser `->get()` sans pagination"
+      ],
+      correctAnswer: 0,
+      explanation: "Streamer la réponse avec des chunks limite la mémoire."
+    },
+    {
+      id: 80,
+      question: "Comment organiser des validations complexes conditionnelles ?",
+      options: [
+        "Rules conditionnelles (Rule::when) / `sometimes` / `bail` + Form Request",
+        "Tout dans le contrôleur avec `if`/`else`",
+        "Uniquement côté front",
+        "Sans messages personnalisés"
+      ],
+      correctAnswer: 0,
+      explanation: "Utiliser `Rule::when`, `sometimes`, `bail` dans un `FormRequest` dédié."
+    },
+    {
+      id: 81,
+      question: "Quelle solution pour exécuter des commandes artisan planifiées sans cron du système ?",
+      options: ["php artisan schedule:work", "php artisan schedule:queue", "php artisan cron:emulate", "php artisan run:schedule"],
+      correctAnswer: 0,
+      explanation: "`schedule:work` boucle et exécute les tâches prévues, utile en environnements restreints."
+    },
+    {
+      id: 82,
+      question: "Quel outil Laravel facilite le test des événements, jobs et notifications ?",
+      options: ["fakes (Event::fake, Queue::fake, Notification::fake)", "Mocks PHP natifs uniquement", "Tests manuels en prod", "Aucun"],
+      correctAnswer: 0,
+      explanation: "Les *fakes* isolent et asservent les side-effects dans les tests."
+    },
+    {
+      id: 83,
+      question: "Comment sécuriser une API avec tokens personnels en Laravel 11 ?",
+      options: ["Laravel Sanctum", "Laravel Passport obligatoire", "JWT personnalisé uniquement", "Sessions PHP uniquement"],
+      correctAnswer: 0,
+      explanation: "Sanctum fournit une solution légère pour SPA/Mobile/API avec tokens personnels."
+    },
+    {
+      id: 84,
+      question: "Quelle directive Blade évite l’échappement automatique d’une variable (à utiliser avec prudence) ?",
+      options: ["{!! $var !!}", "{{ $var }}", "@raw($var)", "@unescape($var)"],
+      correctAnswer: 0,
+      explanation: "`{{ }}` échappe; `{!! !!}` affiche brut (risque XSS si non maîtrisé)."
+    },
+    {
+      id: 85,
+      question: "Quel mécanisme pour des tâches récurrentes robustes avec reprise en cas d’échec ?",
+      options: ["Jobs + retries + backoff + `failed()`", "Boucle `while(true)` en contrôleur", "cron uniquement", "JavaScript setInterval"],
+      correctAnswer: 0,
+      explanation: "Configurer `tries`, `backoff`, gérer `failed()` et un worker queue fiable."
+    },
+    {
+      id: 86,
+      question: "Comment limiter l’exposition des attributs sensibles dans les réponses Eloquent ?",
+      options: ["$hidden et $visible sur le modèle", "Toujours tout exposer", "Filtrer côté client", "Renommer les colonnes"],
+      correctAnswer: 0,
+      explanation: "`$hidden` masque, `$visible` liste blanche; ou utiliser des Resources."
+    },
+    {
+      id: 87,
+      question: "Meilleure pratique pour configurer des événements broadcast privés pour un utilisateur ?",
+      options: [
+        "Canaux privés `private-user.{id}` + autorisation via `BroadcastServiceProvider`",
+        "Canaux publics uniquement",
+        "Pas d’autorisation nécessaire",
+        "Embed des tokens dans l’URL"
+      ],
+      correctAnswer: 0,
+      explanation: "Déclarer le canal privé et la closure d’autorisation qui vérifie l’utilisateur."
+    },
+    {
+      id: 88,
+      question: "Comment gérer proprement des opérations longues dans une requête HTTP ?",
+      options: [
+        "Déporter via Job en queue et renvoyer 202 Accepted avec polling/webhooks",
+        "Augmenter indéfiniment le timeout",
+        "Boucler jusqu’à terminer",
+        "Désactiver PHP max_execution_time"
+      ],
+      correctAnswer: 0,
+      explanation: "Asynchroniser via queue et fournir un suivi côté client."
+    },
+    {
+      id: 89,
+      question: "Quelle méthode garantit l’atomicité d’une mise à jour conditionnelle (ex. compteur) ?",
+      options: ["DB::raw + transactions / `increment()`", "Lire puis écrire sans lock", "Mettre un `sleep()`", "Utiliser `cache()`"],
+      correctAnswer: 0,
+      explanation: "`increment()`/`decrement()` s’exécutent côté DB; combiner avec transactions si nécessaire."
+    },
+    {
+      id: 90,
+      question: "Comment construire un pipeline de traitement modulaire (ex. traitement d’un import) ?",
+      options: [
+        "Illuminate\\Pipeline\\Pipeline avec une suite de classes middleware-like",
+        "Tout dans une seule méthode",
+        "Observers uniquement",
+        "Events uniquement"
+      ],
+      correctAnswer: 0,
+      explanation: "Le composant `Pipeline` enchaîne des étapes réutilisables et testables."
+    }
+  ]
+},
 ];
 export default quizCategories;
